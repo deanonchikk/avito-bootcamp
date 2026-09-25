@@ -1,0 +1,14 @@
+data/*.parquet
+data/*.zip
+data/*.csv
+!answer.csv
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+.idea/
+
+.DS_Store
