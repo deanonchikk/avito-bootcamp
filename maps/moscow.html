@@ -1,0 +1,3622 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3f57c9ce7b1f8327bac4d327ae153185 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3f57c9ce7b1f8327bac4d327ae153185" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3f57c9ce7b1f8327bac4d327ae153185 = L.map(
+                "map_3f57c9ce7b1f8327bac4d327ae153185",
+                {
+                    center: [55.75, 37.62],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c05003d406c0652da7909649c41dbce = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8c05003d406c0652da7909649c41dbce.addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            var circle_marker_dba9d0815dd455dd8b39afbf58a24aa4 = L.circleMarker(
+                [55.781767, 37.59878],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_dba9d0815dd455dd8b39afbf58a24aa4.bindTooltip(
+                `<div>
+                     <b>Тонировка окон:всех стеклянных поверхностей</b><br>Наши услуги включают: 💡Тонирование фасадов зданий, окон квартир, перегородок, дверей, балконов и лод
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0e68985c640d49bdbdf19f7a971beb1 = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_e0e68985c640d49bdbdf19f7a971beb1.bindTooltip(
+                `<div>
+                     <b>Фундамент под ключ. От 80 кв.м. Бетонные работы</b><br>Фундамент под ключ для любого вида домов. Бетонные работы от 80 кв.м. Фундамент плита
+.
+⭐ Гарантия 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_581b3f87ce417ac2386b636fdbc43af6 = L.circleMarker(
+                [55.886038639278055, 37.659275068958074],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_581b3f87ce417ac2386b636fdbc43af6.bindTooltip(
+                `<div>
+                     <b>Услуги мастер на час, помощь в ремонте</b><br>«Я — Андрей, частный мастер на час. С ценами не наглею: всё честно и прозрачно. Обслуживаю, квартиры
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62b37852bf164668675f2b7ab3121a41 = L.circleMarker(
+                [55.746259, 37.563027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_62b37852bf164668675f2b7ab3121a41.bindTooltip(
+                `<div>
+                     <b>Создание и доработки сайта на Битрикс</b><br>обрый день! Занимаюсь доработками сайтов на битриксе (Bitrix) более 8 лет, за это время накоплен бол
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7c0f00b6482c6388f225c8a545f4981 = L.circleMarker(
+                [55.757009, 37.631299],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_f7c0f00b6482c6388f225c8a545f4981.bindTooltip(
+                `<div>
+                     <b>Уникальная Event команда</b><br>Семейный event-дуэт — стильные камерные мероприятия под ключ ✨
+
+Мы — муж и жена, семейный дуэт дидже
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b95d5ba85ddfd562d23d3a456219b67b = L.circleMarker(
+                [55.5561768614978, 37.5574436208236],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b95d5ba85ddfd562d23d3a456219b67b.bindTooltip(
+                `<div>
+                     <b>Токарные и фрезерные работы</b><br>ЦЕХ НАХОДИТСЯ В ЧЕХОВЕ !!!
+
+Токарные, фрезерные, сварочные, слесарные, ремонтно-востановительные раб
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2327b683941e0874f7bca9a3a193814e = L.circleMarker(
+                [55.73233392524792, 37.66553381627897],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_2327b683941e0874f7bca9a3a193814e.bindTooltip(
+                `<div>
+                     <b>Репетитор по русскому языку</b><br>Помогу разобраться в русском и математике, подтянуть оценки, подготовиться к ВПР/ОГЭ и научиться реш
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5acfdecebdf0058c63caeb56238ab7ac = L.circleMarker(
+                [55.79358673, 37.49332809],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_5acfdecebdf0058c63caeb56238ab7ac.bindTooltip(
+                `<div>
+                     <b>Репетитор по фортепиано и сольфеджио(очно/онлайн)</b><br>доброго дня! меня зовут Екатерина, я провожу уроки по сольфеджио и фортепиано
+объясню тему просто и 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c5c0b99279c12b0bd8c613a3b3490ed = L.circleMarker(
+                [55.73773, 37.730212],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_0c5c0b99279c12b0bd8c613a3b3490ed.bindTooltip(
+                `<div>
+                     <b>Лофт с караоке без ограничений по шуму. Versalio</b><br>Напишитe в чат «ЦEНА» + кoл-во человек - cрaзу рaссчитаeм cтoимоcть пoд вaш фopмат.
+
+⭐️ АКЦИИ И БОHУ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b9ce752c76e65c52068701190576b15 = L.circleMarker(
+                [55.7252566069516, 37.6208591744126],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_6b9ce752c76e65c52068701190576b15.bindTooltip(
+                `<div>
+                     <b>Изготовление, ремонт, лазерная пайка очков</b><br>Изготовление очков любой сложности.
+
+Астигматика, бифокальные и прогрессивные линзы, офисные линзы, 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c57e9293b286cc2e9c1d48407e5ae1ff = L.circleMarker(
+                [55.75788989109976, 37.63485890418045],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_c57e9293b286cc2e9c1d48407e5ae1ff.bindTooltip(
+                `<div>
+                     <b>Рабочее место мастера маникюра и педикюра</b><br>Пpeдлагаю рабочее место для мастера маникюра в уютном кабинете в 2 минутах  пешком oт мeтpo Китай-го
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65c6191ca59879d93faa065474e3278b = L.circleMarker(
+                [55.65177, 37.769936],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_65c6191ca59879d93faa065474e3278b.bindTooltip(
+                `<div>
+                     <b>Патентный поверенный по товарным знакам</b><br>Регистрация товарного знака. Провожу предварительный информационный поиск. По результатам поиска даю
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d1bb8a2c3ac5cf47aad961c78c7b100 = L.circleMarker(
+                [55.86056519, 37.48326492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_4d1bb8a2c3ac5cf47aad961c78c7b100.bindTooltip(
+                `<div>
+                     <b>Ремонт телевизоров Быстро Качественно Надёжно</b><br>Здравствуйте  👋🙂 Меня зовут Максим🪪 Занимаюсь  ремонтом жидкокристаллических, плазменных , кинескопн
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c276dcf8536a3391c5ceea6e32c593af = L.circleMarker(
+                [55.61444473, 37.60682678],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_c276dcf8536a3391c5ceea6e32c593af.bindTooltip(
+                `<div>
+                     <b>Бальные танцы / Тренер по бальным танцым ProAm</b><br>Танцы — это место, где можно наконец выдохнуть после шумной Москвы, отвлечься от бесконечной суеты и
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89e69e842e566497a8d2bfaf4ef69ec5 = L.circleMarker(
+                [55.70801521091779, 37.58251535550572],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_89e69e842e566497a8d2bfaf4ef69ec5.bindTooltip(
+                `<div>
+                     <b>Полировка столешниц,керамогранита, мрамора, акрила</b><br>Профессиональное восстановление блеска и гладкости. Современные технологии, обучение в ведущей компа
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b80d3d4251e7d5ce5a2c109f0d82a92 = L.circleMarker(
+                [55.703352, 37.641108],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_8b80d3d4251e7d5ce5a2c109f0d82a92.bindTooltip(
+                `<div>
+                     <b>Ремонт автокондиционера, компрессора, промывка</b><br>Ремонт автокондиционера, компрессора, промывка системы
+
+📍 Работаем быстро и по делу
+🚗 Опыт более 20 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d9d40c9daf75b55971fc093f7e3d43c = L.circleMarker(
+                [55.76101685, 37.62756348],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_1d9d40c9daf75b55971fc093f7e3d43c.bindTooltip(
+                `<div>
+                     <b>Рассылка WhatsApp, Telegram, MAX, SMS, Email</b><br>Добрый день! Ниже описана ключевая информация, ознакомьтесь пожалуйста👇
+
+☑️📋 Все операции и расчёты 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0baa32322c026acb4c2a84c47ac92b8 = L.circleMarker(
+                [55.79751605316304, 37.55850148659974],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_d0baa32322c026acb4c2a84c47ac92b8.bindTooltip(
+                `<div>
+                     <b>Заплетение кос и брейдов</b><br>echi_hd Мастер афроплетения. Делаю различные прически для повседневной носки, на фотосессии и проект
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8dbd1abc9d12d4d78ad66047d4a6206b = L.circleMarker(
+                [55.761097, 37.555966],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_8dbd1abc9d12d4d78ad66047d4a6206b.bindTooltip(
+                `<div>
+                     <b>Canon g7x iii аренда</b><br>Фотоаппарат для стильного контента, reels и “дорогих” кадров 📸
+
+Ищете камеру для трендовых фото и ви
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7976f77cd119e88a6e09bb2ca7c5eba = L.circleMarker(
+                [55.72919846, 37.57453537],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b7976f77cd119e88a6e09bb2ca7c5eba.bindTooltip(
+                `<div>
+                     <b>Свадебный организатор / координатор</b><br>Собираю Ваш день как особенный проект именно под вашу пару.
+
+— придумываю полную концепцию с 0 либо 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ce1f749100e2efd4bc90257c4f05915 = L.circleMarker(
+                [55.651814, 37.395638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_0ce1f749100e2efd4bc90257c4f05915.bindTooltip(
+                `<div>
+                     <b>Фитнес-тренер (похудение,зд.спина,пилатес.)</b><br>Привет, меня зовут Анна!
+
+Я-квалифицированный фитнес-тренер💪
+
+Приглашаю на тренировки!😉
+
+Помогу поху
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16b57fc6799a1bf1ebd388c8d9bb2025 = L.circleMarker(
+                [55.7438281131775, 37.58718767659438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_16b57fc6799a1bf1ebd388c8d9bb2025.bindTooltip(
+                `<div>
+                     <b>Дипломная работа, лабораторная, курсовая, реферат</b><br>Быстро помогу оформить вам вашу выпускную квалификационную работу, курсовую, реферат, лабораторную.
+
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_06374a38e2d7bfb9247a10e55afc18db = L.circleMarker(
+                [55.7559003012868, 37.61774091534422],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_06374a38e2d7bfb9247a10e55afc18db.bindTooltip(
+                `<div>
+                     <b>Моушн-дизайн под ключ</b><br>Мы — EXINE, команда дизайнеров и моушн-специалистов. Делаем моушн-дизайн, который помогает бренду вы
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e91e6d19539f5b59fab5649c63814e78 = L.circleMarker(
+                [55.776381, 37.692429],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_e91e6d19539f5b59fab5649c63814e78.bindTooltip(
+                `<div>
+                     <b>Ремонт холодильников быстро и качественно</b><br>Ремонт холодильников быстро и качественноРемонт холодильников / Выезд на дом — гарантия 1 год, выезд
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e62b63ecb2887e545d0898868b16b4d = L.circleMarker(
+                [55.79369736, 37.58808136],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_9e62b63ecb2887e545d0898868b16b4d.bindTooltip(
+                `<div>
+                     <b>Фотосессия в студии все включено, фотограф</b><br>Добро пожаловать! Если вы искали фотографа, которому можно доверить такой ответственный процесс как 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29f9c5d315a3a0d2b1f8f6125d80c748 = L.circleMarker(
+                [55.71972966872506, 37.69434632535026],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_29f9c5d315a3a0d2b1f8f6125d80c748.bindTooltip(
+                `<div>
+                     <b>Плиточник</b><br>Укладка плитки пол и стены.
+Бригада плиточники с хорошей опытом.+ремонт не жилых помещение а так же 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cefc630c194676cfa2ff66a3dba6ea8b = L.circleMarker(
+                [55.60624695, 37.72558594],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_cefc630c194676cfa2ff66a3dba6ea8b.bindTooltip(
+                `<div>
+                     <b>Маникюрчик +кальянчик(ткг: nogti by lesya)</b><br>👩‍🎨 Маникюр с душой: ВСЕ дизайны и укрепление УЖЕ в цене! | Домашний уют, кино, музыка 🎵 и Френдли о
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0dfd7250d64a96520c43292e81f816d = L.circleMarker(
+                [55.80728024484749, 37.41449118775561],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b0dfd7250d64a96520c43292e81f816d.bindTooltip(
+                `<div>
+                     <b>Редактирование PDF файлов. Фотошоп,сканы,копии</b><br>💼 Делаю корректировку и редактирование PDF-файлов, конвертация в/из PDF текста в соответствии с шабл
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a96ffaf4bea4cd30e7163eceb01bf7d8 = L.circleMarker(
+                [55.740242, 37.65896606],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_a96ffaf4bea4cd30e7163eceb01bf7d8.bindTooltip(
+                `<div>
+                     <b>Удаление перманентного макияжа, бровей, губ</b><br>Удаление татуажа перманентного макияжа
+
+Я Галина Красноруженко
+
+Удаляю любые треш ситуации и любые ц
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bfda239d55381d1f59eb07731efcff5 = L.circleMarker(
+                [55.79808044, 37.53364182],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_2bfda239d55381d1f59eb07731efcff5.bindTooltip(
+                `<div>
+                     <b>Маникюр</b><br>Здравствуйте,меня зовут Елена,я дипломированный мастер маникюра опыт 12 лет!
+Весь инструмент проходи
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_129954d6b9265bf8ff1ba4265df47dfd = L.circleMarker(
+                [55.756805, 37.622726],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_129954d6b9265bf8ff1ba4265df47dfd.bindTooltip(
+                `<div>
+                     <b>Настройка, ремонт, полировка пианино и роялей</b><br>Настройка (не работаю с электронными имитаторами звука и не настраиваю по тюнеру), ремонт (обердемпф
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_347e4304c58a0e68a4f63745af333f1b = L.circleMarker(
+                [55.67920878434389, 37.664354415094095],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_347e4304c58a0e68a4f63745af333f1b.bindTooltip(
+                `<div>
+                     <b>Плиточник, ремонт ванной, санузла</b><br>Качественный ремонт ванных комнат и санузлов. &quot;Под ключ&quot; по доступным ценам. 
+📌   Выполняю полный сп
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83600168001ffe4f773c691f42f4664f = L.circleMarker(
+                [55.77333874332649, 37.58540374626992],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_83600168001ffe4f773c691f42f4664f.bindTooltip(
+                `<div>
+                     <b>Плиточник укладка плитки</b><br>Приветствую!
+Занимаюсь плиточными работами более 10 лет.
+Беру в работу проекты любой сложности.
+Есть
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a98d935a918b0239e87ee3c39e89ef7 = L.circleMarker(
+                [55.781898000109166, 37.69697464942667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_7a98d935a918b0239e87ee3c39e89ef7.bindTooltip(
+                `<div>
+                     <b>Тату-Мастер. Татуировка. Графика / Аниме</b><br>👉 Хочешь тату с чёткими линиями, безопасно и стерильно?
+
+👍 Я помогу тебе на всех этапах: от идеи до 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5293510b0fb3fc453b99eabeefeb3c35 = L.circleMarker(
+                [55.761776, 37.619091],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_5293510b0fb3fc453b99eabeefeb3c35.bindTooltip(
+                `<div>
+                     <b>Гадалка Гадание на Таро Таролог Расклад</b><br>🔮 ТАРОЛОГ ДАРЬЯ | ОПЫТ 15 ЛЕТ | РАБОТАЮ ОНЛАЙН ПО ВСЕЙ РОССИИ
+
+📩 ПИШИТЕ В ЧАТ АВИТО – ОТВЕЧАЮ БЫСТРО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_faa5feb009827d6b84490b870aaa71b5 = L.circleMarker(
+                [55.78615952, 37.63822556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_faa5feb009827d6b84490b870aaa71b5.bindTooltip(
+                `<div>
+                     <b>Монтаж перегородок из гипсокартона</b><br>Здравствуйте работаем с бригадой
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7a02bb585300c3d41951033635e4374 = L.circleMarker(
+                [55.87827301, 37.48077774],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_a7a02bb585300c3d41951033635e4374.bindTooltip(
+                `<div>
+                     <b>Поклейка обоев.Частный специалист</b><br>Здравствуйте! Меня зовут Настя. Я занимаюсь поклейкой обоев и малярными работами более 15 лет. Знаю 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ced837eac0a79bc88467a003c07401d = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_8ced837eac0a79bc88467a003c07401d.bindTooltip(
+                `<div>
+                     <b>Яндекс, 2гис, продвижение, отзывы, гугл</b><br>🔹 Помогаем улучшать репутацию вашего бизнеса на онлайн-площадках:
+
+- Яндекс Карты
+- Яндекс Браузер (
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52c7c708b4b283b87a7db145287fd17c = L.circleMarker(
+                [55.876157, 37.505292],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_52c7c708b4b283b87a7db145287fd17c.bindTooltip(
+                `<div>
+                     <b>Ручная вышивка от глади до бисера</b><br>Вышивка в разных техниках. 
+Бисер, мулине, канитель, золото. 
+Одежда, текстиль и многое 
+другое.
+Раб
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8493d1ec7e5caaead20579ae2b97fd12 = L.circleMarker(
+                [55.788986, 37.61314],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_8493d1ec7e5caaead20579ae2b97fd12.bindTooltip(
+                `<div>
+                     <b>Тренер по теннису. Спаринг</b><br>Я, Алексей Цыканов , никто не любит теннис так , как я. И это заразительно!!!
+
+Hаучу вaс игре в тeнн
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d269cffc550e2f413327bf57d96266dd = L.circleMarker(
+                [55.815969, 37.532313],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_d269cffc550e2f413327bf57d96266dd.bindTooltip(
+                `<div>
+                     <b>Аренда Матиз с правом выкупа</b><br>Cдaется под ВЫKУП Dаеwoо matiz 2012 года с мexаничeской кopoбкoй. Я собственник 
+Есть Гур и ЭСП 
+
+Тр
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bbb6dd1240e6cd9c9d6a1bbea4f2ef9 = L.circleMarker(
+                [55.786607, 37.53331],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_4bbb6dd1240e6cd9c9d6a1bbea4f2ef9.bindTooltip(
+                `<div>
+                     <b>Автоподбор электро и гибридов Москва</b><br>⚡ Подберу электромобиль или гибрид без ошибок при покупке
+
+➖➖➖➖➖
+
+Меня зовут Андрей.
+Более 10 лет за
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5eb371cb5157274195246aac975095e2 = L.circleMarker(
+                [55.70977402, 37.76260376],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_5eb371cb5157274195246aac975095e2.bindTooltip(
+                `<div>
+                     <b>Маникюр на дому</b><br>(Записывайтесь через онлайн записи,подверждаю сразу)Здравствуйте меня меня зовут Лиза
+Я сертифициров
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8da932815346536325461c4cca1ad1a = L.circleMarker(
+                [55.52972163983722, 37.583738330688476],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_d8da932815346536325461c4cca1ad1a.bindTooltip(
+                `<div>
+                     <b>Перманентный макияж брови губы межрисничка</b><br>Приглашаю на перманентный макияж моделей для пополнения портфолио 📸
+
+Оплата только за расходные мате
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e54135848f0a995d9245b43b153028ee = L.circleMarker(
+                [55.70314026, 37.62332153],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_e54135848f0a995d9245b43b153028ee.bindTooltip(
+                `<div>
+                     <b>Грузчики Москва</b><br>Грузчики по Москве.
+
+Переезды, разгрузка, подъем стройматериалов, такелажные работы.
+
+Работаем без о
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0d20de7085853889230acd161727a9b = L.circleMarker(
+                [55.7483742512702, 37.542532780426],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b0d20de7085853889230acd161727a9b.bindTooltip(
+                `<div>
+                     <b>Telegram-канал под ключ</b><br>Помогу сделать современный и удобный канал, который будет выглядеть профессионально и вызывать довер
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fcbdb5a555b8b593b7d4ddd7e70b0c4b = L.circleMarker(
+                [55.60223389, 37.70949554],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_fcbdb5a555b8b593b7d4ddd7e70b0c4b.bindTooltip(
+                `<div>
+                     <b>Кератин/боткс/цветные прядки/прикорневой объем</b><br>Ботокс от 3000 (до плеч)
+
+Кератин от 3000 (до плеч)
+
+Цена зависит от длины, густоты и состояния воло
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01a269503a8d6da072b8015cf11a2855 = L.circleMarker(
+                [55.766562, 37.62404],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_01a269503a8d6da072b8015cf11a2855.bindTooltip(
+                `<div>
+                     <b>Помощь в оформлении: ВКР, дипломная, кандидатская диссертация, научные статьи вак</b><br>📚Помoщь в офoрмлeнии студенческих и научныx рaбот c гаpaнтией рeзультатa ( в рамках утвержденного пл
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d08fda27b0ff2d883f57c13c8f110d78 = L.circleMarker(
+                [55.751999, 37.767456],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_d08fda27b0ff2d883f57c13c8f110d78.bindTooltip(
+                `<div>
+                     <b>Изготовление шестерен</b><br>Изготовим шестерни. СРОЧНО!
+
+Наше предприятие находится в г.Ногинск Московской области 
+(40 км от М
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6769dbc857af4d91be3224d4fbd786af = L.circleMarker(
+                [55.73994170471917, 37.519231105163556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_6769dbc857af4d91be3224d4fbd786af.bindTooltip(
+                `<div>
+                     <b>Производство, обработка.Лазерная резка</b><br>🏭 О НАС:
+✅ Профессиональная команда — инженеры и технологи с опытом от 10 лет.
+✅ Современное оборудо
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7bce277d070e16e49739f3c0a7e8104a = L.circleMarker(
+                [55.67395401, 37.61294556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_7bce277d070e16e49739f3c0a7e8104a.bindTooltip(
+                `<div>
+                     <b>Тату мастер, опыт 5 лет, татуировка</b><br>❤️ ПИШИ «ХОЧУ ТАТУ» - ПОЛУЧИ СКИДКУ❤️ 
+Татуировки как из Pinterest - твоя реальность со мной 🫶🏻  чит
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_818b1e133a9162f549ce327ed4eb5d54 = L.circleMarker(
+                [55.839805, 37.460951],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_818b1e133a9162f549ce327ed4eb5d54.bindTooltip(
+                `<div>
+                     <b>Текст на печатной машинке</b><br>Хотите порадовать близких красиво упакованными подарками? 🎁Или признаться в своих чувствах с помощью
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f658acb0494ceca9eb0c4434ed0e0f09 = L.circleMarker(
+                [55.867137, 37.647163],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_f658acb0494ceca9eb0c4434ed0e0f09.bindTooltip(
+                `<div>
+                     <b>Установка + продажа кондиционеров в ЖК Пик</b><br>Пик установка кондиционеров / Монтаж кондиционеров в домах ПИК
+
+Устали от духоты? Хотите создать ком
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07e17df37593f87615935d05ba7c46d0 = L.circleMarker(
+                [55.75581741333008, 37.617645263671875],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_07e17df37593f87615935d05ba7c46d0.bindTooltip(
+                `<div>
+                     <b>Оживление фото. Клип в подарок. Реставрация</b><br>🎁 Трогательный видео-клип В ПОДАРОК 🎁
+
+✨ Oживляю старые и новые фото — возвращаю эмоции, которые каз
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bbcb22fa440a5d68ef0203c57b284cd = L.circleMarker(
+                [55.887473, 37.661536],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_6bbcb22fa440a5d68ef0203c57b284cd.bindTooltip(
+                `<div>
+                     <b>Монтаж/демонтаж секционных ворот</b><br>Профессиональный монтаж секционных ворот от опытных специалистов! 
+Почему выбирают нас? 
+— Опытные м
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e2225c5ce4d684bea296eaec3964e11 = L.circleMarker(
+                [55.759461, 37.407726],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_6e2225c5ce4d684bea296eaec3964e11.bindTooltip(
+                `<div>
+                     <b>Замена антифриза с промывкой системы охлаждения</b><br>ДОВЕРЬТЕ ЗАМЕНУ ТЕХНИЧЕСКИХ ЖИДКОСТЕЙ ПРОФЕССИОНАЛАМ:
+
+✅ Замена антифриза и промывка системы охлажде
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1846528f7ed7b699fb733e0b795051ad = L.circleMarker(
+                [55.71987915, 37.7436142],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_1846528f7ed7b699fb733e0b795051ad.bindTooltip(
+                `<div>
+                     <b>Ремонт автокондиционеров. Замена/ремонт трубок</b><br>Работаете на ходу или стоите в пробке, а кондиционер не охлаждает? Воздух в салоне неприятно пахнет 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7353ee707ee6b4f074c3d3b8bbd7f9ff = L.circleMarker(
+                [55.730497, 37.63102],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_7353ee707ee6b4f074c3d3b8bbd7f9ff.bindTooltip(
+                `<div>
+                     <b>Услуги программиста 1С</b><br>Здравствуйте!
+
+📞 Чтобы получить бecплaтную кoнcультацию по вашей зaдaчe - звоните!
+► Или напишите Ва
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bdbc45239b425eaa53391a0541cc2c9 = L.circleMarker(
+                [55.648824, 37.741998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_2bdbc45239b425eaa53391a0541cc2c9.bindTooltip(
+                `<div>
+                     <b>Ботокс нити увеличение губ липолитики скулы</b><br>❤️Работа доктора с : всеми зонами ботулинотерпии, нитевой лифтинг, биорепарация, биоревитализация, б
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_743aa9709087b7347744886ef72db6fd = L.circleMarker(
+                [55.78788360697776, 37.557042611674746],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_743aa9709087b7347744886ef72db6fd.bindTooltip(
+                `<div>
+                     <b>Вывоз мусора:контейнеры и газели</b><br>‼️СРОЧНЫЕ ЗАКАЗЫ 
+
+👬РАБОТАЕМ НА РЕПУТАЦИЮ
+
+📝ПРЕДОСТАВЛЯЕМ ДОКУМЕНТЫ
+
+🫰Цена фиксируется сразу.
+
+•Выве
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb988c3afb5893bdea678f67f541bef2 = L.circleMarker(
+                [55.57965469, 37.59107208],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_fb988c3afb5893bdea678f67f541bef2.bindTooltip(
+                `<div>
+                     <b>Техосмотр Диагностическая карта</b><br>✅ Oфициальный Аккpeдитoвaнный Пункт Tехническoго Oсмотра автомoбилeй и мoтoциклoв в Mocкве! 
+
+Катего
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3e026650ed967e9e3f0db6482d94925 = L.circleMarker(
+                [55.73893356323242, 37.42289352416992],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_f3e026650ed967e9e3f0db6482d94925.bindTooltip(
+                `<div>
+                     <b>Маникюр и педикюр</b><br>Фото работ есть в тг канале, если интересно ознакомится, пиши скину.
+По всем вопросам пишите в смс!🥰
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2984650aa153bb9995f00d1475905092 = L.circleMarker(
+                [55.866964962031254, 37.65128808465576],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_2984650aa153bb9995f00d1475905092.bindTooltip(
+                `<div>
+                     <b>Массаж</b><br>Массаж, работаю на дому
+Массаж классический, расслабляющий (без интима), антицеллюлитный.
+Для запи
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b5cf69b299c903a8f7fe7cf266c46300 = L.circleMarker(
+                [55.67132054459121, 37.45014745531901],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b5cf69b299c903a8f7fe7cf266c46300.bindTooltip(
+                `<div>
+                     <b>Вывоз старой мебели и мусора</b><br>Вывоз старой мебели,стенки,мусора и демонтаж квартира тоже занимаемся обои,ламинат,плитки и т.д
+Все 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a69d3d1b15995930590954ebd21e42f0 = L.circleMarker(
+                [55.75586319, 37.61769867],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_a69d3d1b15995930590954ebd21e42f0.bindTooltip(
+                `<div>
+                     <b>Банкротство ООО для учредителя</b><br>Пишите, звоните, передавайте контакт тем, кому актуально.
+
+Опыт банкротства юрлиц с 2011 года.
+
+Защи
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_285116ceb8daf640ad73f13bb801adbe = L.circleMarker(
+                [55.77045890410657, 37.62262815344236],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_285116ceb8daf640ad73f13bb801adbe.bindTooltip(
+                `<div>
+                     <b>Уничтожение клопов тараканов крыс плесени</b><br>Профессиональная дезинфекция, уничтожение насекомых и грызунов от компании Росгорсэс в Москве.
+
+💎 По
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15de3aa1944616bd983f5302e08d41cf = L.circleMarker(
+                [55.86233139, 37.65830994],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_15de3aa1944616bd983f5302e08d41cf.bindTooltip(
+                `<div>
+                     <b>Обучение наращиванию ресниц</b><br>Обучаю наращиванию ресниц, все базовые навыки, без воды, разбор объемов, видов ресниц, поставлю руку
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cfbd9b67ea5c8dcee11c92344758535 = L.circleMarker(
+                [55.71517, 37.45177],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_6cfbd9b67ea5c8dcee11c92344758535.bindTooltip(
+                `<div>
+                     <b>Монтаж и согласование узла учета теплоэнергии</b><br>● Монтаж и ввод в эксплуатацию общедомовых счетчиков тепла. Выезд на замер и расчет стоимости осущес
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1bb3835f0d3b597b3f2335b848e24ffc = L.circleMarker(
+                [55.63751984, 37.32440567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_1bb3835f0d3b597b3f2335b848e24ffc.bindTooltip(
+                `<div>
+                     <b>Маникюр с укреплением гелем,педикюр</b><br>Приветствую, я действующий мастер,с опытом работы более 5 лет. Меня зовут Лиза. 
+
+Маникюр+укрепления
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2503a36d343c709d814165be5b1594dd = L.circleMarker(
+                [55.74671982400724, 37.536291508169484],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_2503a36d343c709d814165be5b1594dd.bindTooltip(
+                `<div>
+                     <b>Свадебный фотограф:Пленка+Цифра-Первые фото завтра</b><br>Ваша свадьба — это не просто событие, это кино, в котором вы — главные герои✨
+
+Здравствуйте! Меня зо
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48787902b915f0fd3cb4e159094ae9b6 = L.circleMarker(
+                [55.8948288, 37.58340836],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_48787902b915f0fd3cb4e159094ae9b6.bindTooltip(
+                `<div>
+                     <b>Массаж тела классический и лимфодренажный</b><br>Здравствуйте! Меня зовут Даша. 
+
+Я с большим интересом и удовольствием осваиваю искусство массажа. Г
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e7acede77eaee8ed563e8e75ff3a3ad = L.circleMarker(
+                [55.706492, 37.797469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_3e7acede77eaee8ed563e8e75ff3a3ad.bindTooltip(
+                `<div>
+                     <b>Ремонт great wall hover haval geely chery</b><br>Тех центр  МР центр !  Предлагает услугу по ремонту и техническому обслуживанию Китайских автомобиле
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3a6b5eee8c13d1fc9274f3668f599fb = L.circleMarker(
+                [55.58792496, 37.63711166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_a3a6b5eee8c13d1fc9274f3668f599fb.bindTooltip(
+                `<div>
+                     <b>Эвакуатор Бирюлево</b><br>Эвакуация автомобилей в районе Бирюлёво: надёжная помощь в любой ситуации
+
+Выгодные тарифы на услуги
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f63227756acd533eb39e2572234c5b8 = L.circleMarker(
+                [55.64691925, 37.50679398],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_7f63227756acd533eb39e2572234c5b8.bindTooltip(
+                `<div>
+                     <b>Ремонт сколов/трещин лобовых стекол</b><br>Цены:
+
+Скол - от 200 рублей мм².
+
+Трещина - от 150 рублей сантиметр.
+
+Остановка трещины 1000 рублей.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_36cca1af423c345a34502318109945ce = L.circleMarker(
+                [55.794295, 37.545653],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_36cca1af423c345a34502318109945ce.bindTooltip(
+                `<div>
+                     <b>Скупка плат, радиодеталей, оргтехники на вес</b><br>☎️ Звоните и пишите в любое время
+
+⚠️ Не берём: телевизоры и штучные изделия, например один телефон 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da9e8e4442de9f0f0d9b70b639cfefb4 = L.circleMarker(
+                [55.75684357, 37.40813828],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_da9e8e4442de9f0f0d9b70b639cfefb4.bindTooltip(
+                `<div>
+                     <b>Химчистка салона автомобиля</b><br>❗️Только качественные материалы, а так же профессиональное оборудование.
+
+💵Цена на услуги определяет
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1dbc8b60da77decdb65fd650e82ee839 = L.circleMarker(
+                [55.75073242, 37.56227112],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_1dbc8b60da77decdb65fd650e82ee839.bindTooltip(
+                `<div>
+                     <b>Бухгалтер ИП</b><br>Помогаю законно снизить налоговую нагрузку и избежать штрафов
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d4f02e7dff933e9e6f8f19da9542ffe = L.circleMarker(
+                [55.75586319, 37.61769867],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_8d4f02e7dff933e9e6f8f19da9542ffe.bindTooltip(
+                `<div>
+                     <b>Услуги бухгалтера</b><br>Работаю не «галопом по компаниям», а индивидуально с каждым клиентом. Веду ваш бизнес так, как будто
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15c6f42a96d1ea3103ee5afb1c44e544 = L.circleMarker(
+                [55.867622, 37.684847],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_15c6f42a96d1ea3103ee5afb1c44e544.bindTooltip(
+                `<div>
+                     <b>Брови/мужская коррекция</b><br>Ухоженные брови - это часть профессионального имиджа делового человека. Показатель вашей собранности
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49568d35af3a9799e8823a80bd86077e = L.circleMarker(
+                [55.751663, 37.817173],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_49568d35af3a9799e8823a80bd86077e.bindTooltip(
+                `<div>
+                     <b>Ремонт мототехники,тюнинг, То,скутеров,мопедов</b><br>Онлайн диагностика техники и звонки с 10:00 до 22:00 
+
+,Ремонт,тюнинг, То,скутеров,мопедов
+Замена ма
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_449369b5d1902ff2dc1ce97e21841ff3 = L.circleMarker(
+                [55.80504608, 37.51479721],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_449369b5d1902ff2dc1ce97e21841ff3.bindTooltip(
+                `<div>
+                     <b>Ремонт обслуживание кондиционеров чистка заправка</b><br>Здравствуйте! Меня зовут Георгий я квалифицированный специалист по ремонту бытовых и промышленных си
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbbe1fb31503b3764b408eae9f5d53cf = L.circleMarker(
+                [55.74182829817667, 37.73888989472857],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_bbbe1fb31503b3764b408eae9f5d53cf.bindTooltip(
+                `<div>
+                     <b>Постановка на учет мотоцикла в гибдд</b><br>Регистpация Вaшeго мотоцикла, в ГИБДД c владeльцем и без под ключ. 
+Получение ЭПTС (элeктpoнный пacп
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf2740d03de22105adeff84c602d30ec = L.circleMarker(
+                [55.79261398, 37.78712082],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_bf2740d03de22105adeff84c602d30ec.bindTooltip(
+                `<div>
+                     <b>Собеседник друг на час</b><br>Дистанционная поддержка человека 
+
+Первый звонок ознакомительный 
+Знакомство, формирование запроса ,
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce08927f70f7f89c643f88348f2ff43b = L.circleMarker(
+                [55.75586319, 37.61769867],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_ce08927f70f7f89c643f88348f2ff43b.bindTooltip(
+                `<div>
+                     <b>Побью Дуолинго от вашего имени</b><br>Побью Дуолинго, скажу, от чьего имени, сниму на видео
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9c1dcd9a3566e8426a7cf3f390472ac = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_a9c1dcd9a3566e8426a7cf3f390472ac.bindTooltip(
+                `<div>
+                     <b>Монтаж сэндвич панелей,строительство ангаров</b><br>МОНТАЖ СЭНДВИЧ-ПАНЕЛЕЙ ЛЮБОЙ СЛОЖНОСТИ
+
+Мы предлагаем!
+
+❗️ БЕСПЛАТНЫЙ ЗАМЕР
+
+❗️ ВЫЕЗД ЗАМЕРЩИКА В ДЕ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_708ab063f0a005bb5cd354413fb75c97 = L.circleMarker(
+                [55.75877278998588, 37.61248204456234],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_708ab063f0a005bb5cd354413fb75c97.bindTooltip(
+                `<div>
+                     <b>Курс по клубнике в шоколаде</b><br>❤️ Скидка за добавление в избранное 500 рублей, которую можно использовать при покупке Среднего курс
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82e4984d6aa9b0506907d15debfa5eba = L.circleMarker(
+                [55.771672, 37.83183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_82e4984d6aa9b0506907d15debfa5eba.bindTooltip(
+                `<div>
+                     <b>Перманентный макияж, ламинирование, окрашивание</b><br>Доброго дня, меня зовут Наталья!😊
+Предлагаю Вам свои услуги - Мои работы качественные, а самое главн
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82f6d6597b6f404bd8aa173f914febeb = L.circleMarker(
+                [55.85153, 37.676187],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_82f6d6597b6f404bd8aa173f914febeb.bindTooltip(
+                `<div>
+                     <b>Разблокировка iCloud после мошенников</b><br>Разблокировка Apple iCloud после мошенников, исключительно после мошенников.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b89fb74fe669501b470c8ff6ffdfdd10 = L.circleMarker(
+                [55.66825867, 37.56365585],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b89fb74fe669501b470c8ff6ffdfdd10.bindTooltip(
+                `<div>
+                     <b>Индивидуальное обучение барберингу с нуля</b><br>Обучение на барбера с нуля
+ 💇
+ курсы барберинга для новичков индивидуально 20 ; 10 ; 5 ; 3 дня 
+/ста
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7778cf19b8f07998d5f5485a6b87f9af = L.circleMarker(
+                [55.754527, 37.662129],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_7778cf19b8f07998d5f5485a6b87f9af.bindTooltip(
+                `<div>
+                     <b>Индивидуальные тренировки по самообороне, цао</b><br>Провожу индивидуальные тренировки по единоборствам и общей физической подготовке.
+
+Занятия проводятс
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d41752bd8442986ef045d83cd583ca39 = L.circleMarker(
+                [55.5320282, 37.50279617],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_d41752bd8442986ef045d83cd583ca39.bindTooltip(
+                `<div>
+                     <b>Ламинирование, окрашивание бровей, ресниц. Бутово</b><br>Привет. 👋 Меня зовут Вера, я сертифицированный специалист по оформлению бровей и ресниц. 
+
+✨При офор
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_571535ee165b756e79fad14a2742f490 = L.circleMarker(
+                [55.799957, 37.799032],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_571535ee165b756e79fad14a2742f490.bindTooltip(
+                `<div>
+                     <b>Система очистки воды, водоподготовка, обслуживание</b><br>Cистемы очистки воды от компании Аквапрофи
+Чистая вода с пользой для здоровья у вас дома!
+
+Наслаждай
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd3bd3329ca3a10895e0b46b5caf6dba = L.circleMarker(
+                [55.760322, 37.579825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_bd3bd3329ca3a10895e0b46b5caf6dba.bindTooltip(
+                `<div>
+                     <b>Юрист по недвижимости и земельным вопросам</b><br>Юрист по недвижимости и земельным вопросам
+
+❓ Вас обманом лишили квартиры или дома?
+❓ Договор дарени
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a42902af6626098b13c97fd03fa5bd78 = L.circleMarker(
+                [55.77522012472351, 37.46986064702027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_a42902af6626098b13c97fd03fa5bd78.bindTooltip(
+                `<div>
+                     <b>Покатаю на быстрой Audi в бункере с музыкой</b><br>Меня зовут Даниил 
+Покатаю на ауди 600 л.с с музыкой в тонировке по городу.
+Готов к новым знакомства
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd3e6656dc0d471b2f070d504a90ebb6 = L.circleMarker(
+                [55.735039, 37.509232],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_dd3e6656dc0d471b2f070d504a90ebb6.bindTooltip(
+                `<div>
+                     <b>Гражданство по корням.Профессионально, практично</b><br>Операционные, юридические, консультационные действия в  строгом соответствии с требованиями :
+-зако
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7eaf0a50a67a0f33f731f02a96be180 = L.circleMarker(
+                [55.705463, 37.766154],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b7eaf0a50a67a0f33f731f02a96be180.bindTooltip(
+                `<div>
+                     <b>Изготовление ножей, ремонт, заточка, ножны</b><br>Ремонт, изготовление на заказ, лазерная гравировка, галтовка, сатин ручной, производство ножен из ко
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b5a96aae189b0acfddb58208bc397c42 = L.circleMarker(
+                [55.74327750684837, 37.65821008496093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b5a96aae189b0acfddb58208bc397c42.bindTooltip(
+                `<div>
+                     <b>Оспаривание удержаний пвз Wildberries шк, Брак</b><br>Оспаривание удержаний ПВЗ Wildberries (WB)
+Зависшие ШК • Брак • Подмены • Потери товара
+Создание и с
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c95c60745847d1b1941d6063a42bd51 = L.circleMarker(
+                [55.79776001, 37.48907852],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_1c95c60745847d1b1941d6063a42bd51.bindTooltip(
+                `<div>
+                     <b>Маникюр с покрытием и укреплением</b><br>💅 Здравствуйте , меня зовут Елена !🌸 
+Я мастер любящий своё дело! 💅
+Приглашаю Вас к себе на выгодный
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85dd5977800178dbb02cacb1f3117c4a = L.circleMarker(
+                [55.768659, 37.597558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_85dd5977800178dbb02cacb1f3117c4a.bindTooltip(
+                `<div>
+                     <b>Юрист по жилищным спорам</b><br>Ищете сильного адвоката по жилищным спорам в Москве? Столкнулись с выселением, разделом квартиры, пр
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1aaab79a23f6d2e06b3846ff22f85d68 = L.circleMarker(
+                [55.68170166, 37.51538086],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_1aaab79a23f6d2e06b3846ff22f85d68.bindTooltip(
+                `<div>
+                     <b>Вывоз строительного мусора мебели и хлама</b><br>Работаю сам на себя! 
+
+Убираем за собой
+
+ Цены не добавляю
+
+Вывоз строительного мусора, мебели, хлам
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99458374435ab42f8662ce2037531776 = L.circleMarker(
+                [55.6991272, 37.80604935],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_99458374435ab42f8662ce2037531776.bindTooltip(
+                `<div>
+                     <b>Расклеить такси, демонтаж пленки</b><br>🧑‍🔧 Здравствуйте - зaнимaюcь пpофecсиональным  демонтaжем плeнок с автoмобилей, знaю, как прaвильнo 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7511813c5c51ee1980021335c7f75b6 = L.circleMarker(
+                [55.909776, 37.54047],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_f7511813c5c51ee1980021335c7f75b6.bindTooltip(
+                `<div>
+                     <b>Замена лобового стекла</b><br>Скидка на покупку стекла - при установке у Нас !
+
+Привет дорогой друг ! Если Ты решил поменять лобов
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3df43f61cb857ddd79b8f51207020b64 = L.circleMarker(
+                [55.63328034619574, 37.678595890843184],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_3df43f61cb857ddd79b8f51207020b64.bindTooltip(
+                `<div>
+                     <b>Парикмахер-универсал.Наталья.Выезд на дом</b><br>Выполняю стрижки женские, мужские,детские.Окрашивания любой сложности,лечение волос. Химическая зави
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9050f73e1814785f8a3404cf714a123a = L.circleMarker(
+                [55.80327400415172, 37.39854751583859],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_9050f73e1814785f8a3404cf714a123a.bindTooltip(
+                `<div>
+                     <b>Коррекция/оформление/ламинирование бровей и ресниц</b><br>✅ Профессиональные составы – без выпадения и раздражения 
+
+✅ Естественные, ухоженные брови и ресницы
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e18083f81e5bb54ed7bd8ba9844a592c = L.circleMarker(
+                [55.813703, 37.486975],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_e18083f81e5bb54ed7bd8ba9844a592c.bindTooltip(
+                `<div>
+                     <b>Психолог</b><br>Я клинический психолог, кризисный психолог. Работаю в интегративном подходе, основой которого являет
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa418a2d6e580f359f15af6fec277a25 = L.circleMarker(
+                [55.75581741, 37.61764526],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_aa418a2d6e580f359f15af6fec277a25.bindTooltip(
+                `<div>
+                     <b>Сопровождение на фабриках и выставках в Китае</b><br>📍Сопровождение на фабриках и выставках в Китае 🇨🇳
+
+Планируете деловую поездку в Китай и хотите, чтоб
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9cf2b5eb0533c7b1eb9e5a795fc5d8d = L.circleMarker(
+                [55.8965765832498, 37.40119179920953],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_d9cf2b5eb0533c7b1eb9e5a795fc5d8d.bindTooltip(
+                `<div>
+                     <b>Аренда мойка высокого давления</b><br>Аpeнда уcтaновки cверхвысoкогo давления ,электpoceть 220в
+Мойка высоко давления аренда 
+Применение г
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b65612811491c1718f27e15a0e1969fb = L.circleMarker(
+                [55.75586319, 37.61769867],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b65612811491c1718f27e15a0e1969fb.bindTooltip(
+                `<div>
+                     <b>Репетитор по русскому языку</b><br>Здравствуйте! Меня зовут Анастасия, я репетитор по русскому языку с пятилетним опытом подготовки к О
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c4d2e719ae62706085c27083f039056 = L.circleMarker(
+                [55.7093415044017, 37.617936649918775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_8c4d2e719ae62706085c27083f039056.bindTooltip(
+                `<div>
+                     <b>Моментальный/эко загар /обучение Тульская Москва</b><br>Студия массажа и загара ТВОЯ ФОРМА на Тульской ❤️
+
+Что мы предлагаем: УНИКАЛЬНУЮ АВТОРСКУЮ ТЕХНИКУ, 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f17697dd1b69b284a98b59d0f5c5565b = L.circleMarker(
+                [55.82937, 37.451555],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_f17697dd1b69b284a98b59d0f5c5565b.bindTooltip(
+                `<div>
+                     <b>Интервью с выпускниками детского сада. Опыт 15 лет</b><br>СЪЕМКА ФИЛЬМА - ИНТЕРВЬЮ С ВАШИМ РЕБЕНКОМ
+
+💖 Это живой фильм-интервью о детстве для выпускников детс
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca3c5595d783eeec863b476c2cd29fe8 = L.circleMarker(
+                [55.742499, 37.671983],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_ca3c5595d783eeec863b476c2cd29fe8.bindTooltip(
+                `<div>
+                     <b>Аппаратный лимфодренажный массаж Антицеллюлитный</b><br>Давайте создадим лучшую версию вас вместе! 🏆
+
+Ждем вас на наших авторских аппаратных программах! 🎯
+Н
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c321a9dd46aed3016a95867ef7727cae = L.circleMarker(
+                [55.697011514800245, 37.63401654104452],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_c321a9dd46aed3016a95867ef7727cae.bindTooltip(
+                `<div>
+                     <b>Ведущий на Свадьбу Корпоратив Юбилей</b><br>🎉СВАДЬБА бывает один раз — сделай её особенной! Ведущий, который чувствует атмосферу пары! Без нелов
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2093bcf02d7b5b5bbde9f2fd74685c3 = L.circleMarker(
+                [55.723703170172136, 37.824082412557935],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_c2093bcf02d7b5b5bbde9f2fd74685c3.bindTooltip(
+                `<div>
+                     <b>Электрик</b><br>Услуги электрика.ЭЛЕКТРОМОНТАЖ Замена розеток , выключателей. Установка люстр , дополнительных розет
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f0c8930ac01a2c985fe557b6619d310 = L.circleMarker(
+                [55.7989949410595, 37.7998810477393],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_0f0c8930ac01a2c985fe557b6619d310.bindTooltip(
+                `<div>
+                     <b>Торты на заказ, подарочные наборы</b><br>Изготавливаю разнообразные, креативные сладости  на заказ, премиум класса. Использую только лучшие, 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_14911696dd5ff23c48d9f3d4ddff6c82 = L.circleMarker(
+                [55.821097, 37.641045],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_14911696dd5ff23c48d9f3d4ddff6c82.bindTooltip(
+                `<div>
+                     <b>Ремонт сколов и резка зеркал на дому с выездом</b><br>Резка зеркал и стекла на дому в Москве. Мастер по зеркалам
+
+Резчик зеркал с выездом — это моя работа
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76b52bef38b1d6a9e8bfe443b9900673 = L.circleMarker(
+                [55.75612360501442, 37.61573098097969],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_76b52bef38b1d6a9e8bfe443b9900673.bindTooltip(
+                `<div>
+                     <b>Свадебный фотограф и видеограф Москва и мо</b><br>Свадебный фотограф и видеограф в Москве и МО | Фото + видео + reels в подарок.
+
+Снимаем свадьбы крас
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90d22ea28edfc52d2023a1f39cfbe53a = L.circleMarker(
+                [55.777038645491224, 37.47779814738254],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_90d22ea28edfc52d2023a1f39cfbe53a.bindTooltip(
+                `<div>
+                     <b>Полировка,керамика,детейлинг</b><br>Верните автомобилю блеск и защитите его на годы вперёд!
+
+Профессиональная полировка кузова, детейлин
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b06bff6f21e5ef09b031db3d01da6072 = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b06bff6f21e5ef09b031db3d01da6072.bindTooltip(
+                `<div>
+                     <b>Бухгалтер для ИП</b><br>Бухгалтер для ИП
+
+СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ! Скидка 20% на бухгалтерское сопровождение на 3 месяца!
+
+-
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25864ab8b72e4efa59995b0bb6357455 = L.circleMarker(
+                [55.79692708362623, 37.633361007837834],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_25864ab8b72e4efa59995b0bb6357455.bindTooltip(
+                `<div>
+                     <b>Поиск воды на участке, георазведка</b><br>💧 Поиск воды на участке ДО бурения скважины или колодца. Геофизическая разведка (георазведка). Эконо
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_06e8d6d23b4025133f1c8bcc63226b57 = L.circleMarker(
+                [55.7251134718179, 37.811241681943],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_06e8d6d23b4025133f1c8bcc63226b57.bindTooltip(
+                `<div>
+                     <b>Отлов животных,перевозка животных,зоотакси</b><br>Отлов кошек и собак,лис и других животных,перевозка животных,спасение  животных на территории Москвы
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7fe838194d9f854a75051339037e7fd7 = L.circleMarker(
+                [55.814588, 37.734165],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_7fe838194d9f854a75051339037e7fd7.bindTooltip(
+                `<div>
+                     <b>Авто под выкуп Kia Rio Белый седан 2021</b><br>Не банк. Просто даю машины в рассрочку с выкупом.
+
+С кредитом не сложилось? Бывает. У меня проще.
+
+Я
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dcf6f2b438af81733324c24418d4139e = L.circleMarker(
+                [55.54262543, 37.52957153],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_dcf6f2b438af81733324c24418d4139e.bindTooltip(
+                `<div>
+                     <b>Изготовление и ремонт авто ключей на выезде</b><br>❤️ ДОБАВЬ В ИЗБРАННОЕ, ЧТОБЫ НЕ ИСКАТЬ ПОТОМ
+
+Всем привет ✋
+Есть проблема с ключом от машины? Набира
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_635715d65f13e3d52854626270b2aab7 = L.circleMarker(
+                [55.66099673727738, 37.75159065891566],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_635715d65f13e3d52854626270b2aab7.bindTooltip(
+                `<div>
+                     <b>Фотозона</b><br>Фотозоны и декорирование
+
+🎁Можете выбрать варианты которые вы видите на фото в объявлениях, так же п
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4eda4271c9cb3754557c58eecde5f340 = L.circleMarker(
+                [55.77196, 37.605724],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_4eda4271c9cb3754557c58eecde5f340.bindTooltip(
+                `<div>
+                     <b>Курсы/Уроки рисования для взрослых</b><br>🎨 Уроки Рисование для взрослых в Москве — начните с пробного занятия всего за 500 ₽!
+
+Хотите научить
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e787b9f3493317937ad11b76435050e2 = L.circleMarker(
+                [55.68035126, 37.67643738],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_e787b9f3493317937ad11b76435050e2.bindTooltip(
+                `<div>
+                     <b>Актерское мастерство онлайн</b><br>Хотите говорить так, чтобы вас слушали затаив дыхание? Мечтаете уверенно держаться в кадре, блистать
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc5c1ee64d5cd88a2bdc7785dd45efb6 = L.circleMarker(
+                [55.70685196, 37.4026947],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_bc5c1ee64d5cd88a2bdc7785dd45efb6.bindTooltip(
+                `<div>
+                     <b>Столярная мастерская &quot;Сколково&quot;</b><br>Новая жизнь творческой мастерской: теперь мы здесь 🌟✨
+Привет-привет, друзья! 😊
+Столярная мастерская 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_659403c470beae9190e04f6b38805dfa = L.circleMarker(
+                [55.770092, 37.626385],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_659403c470beae9190e04f6b38805dfa.bindTooltip(
+                `<div>
+                     <b>Психолог/Расстановки по Б. Хеллингеру</b><br>Здравствуйте, меня зовут Александр!
+Я психолог и расстановщик. Провожу расстановки по Хеллингеру. В
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73b927f4956b33820fd2acfda6673a9a = L.circleMarker(
+                [55.685158, 37.723807],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_73b927f4956b33820fd2acfda6673a9a.bindTooltip(
+                `<div>
+                     <b>Маникюр/Наращивание/Дизайны</b><br>Привет,я Катя,мастер маникюра из Москвы с опытом работы пол года🥹
+
+Что я могу предложить:
+•Все от ню
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_785ff1bd59b47f47faaf825eb902fca6 = L.circleMarker(
+                [55.87659073, 37.54828644],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_785ff1bd59b47f47faaf825eb902fca6.bindTooltip(
+                `<div>
+                     <b>Маникюр /наращивание /дизайн /педикюр</b><br>Дорогие дамы🤍
+
+Меня зовут Флора, я профессиональный и дружелюбный мастер по маникюру и педикюру👌
+
+🔥о
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad83a840417e93f36ec05f77fb20f30f = L.circleMarker(
+                [55.54804993, 37.55464554],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_ad83a840417e93f36ec05f77fb20f30f.bindTooltip(
+                `<div>
+                     <b>Поклейка обоев</b><br>Добрый день! Профессионально выполняю следующие работы:
+КОСМЕТИЧЕСКИЙ РЕМОНТ
+ШПАТЛЕВКА СТЕН
+ПОКЛЕЙКА
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe97a8c2c094fdb5cc19953120413ee0 = L.circleMarker(
+                [55.772259389623215, 37.5672573183429],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_fe97a8c2c094fdb5cc19953120413ee0.bindTooltip(
+                `<div>
+                     <b>Бенто торты на заказ</b><br>Капкейки. Блинные бенто рулеты вкусно и красиво. Смотрите в профиле! Божественно вкусные! Бенто торт
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_feb18efe6a81dde43c360eb0b0337ca2 = L.circleMarker(
+                [55.686459600466506, 37.4700114111328],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_feb18efe6a81dde43c360eb0b0337ca2.bindTooltip(
+                `<div>
+                     <b>Штробление стен, алмазное сверление отверстий</b><br>Штробление и сверление под электрику без пыли | Частный мастер | Москва и МО
+
+Здравствуйте!
+Выполня
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_589367ac83c6cf3c72a28e25fe71c644 = L.circleMarker(
+                [55.70545578, 37.38046265],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_589367ac83c6cf3c72a28e25fe71c644.bindTooltip(
+                `<div>
+                     <b>Мастер маникюра</b><br>Я сертифицированный мастер по маникюру, Приглашаю Вас к себе на маникюр .
+•Маникюр + покрытие - 1700
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e104b1ce3cb52bd2265dbac653c9c91 = L.circleMarker(
+                [55.61320496, 37.73146057],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_7e104b1ce3cb52bd2265dbac653c9c91.bindTooltip(
+                `<div>
+                     <b>Автоэлектрик с выездом,ремонт спец техники</b><br>Выездной автоэлектрик. Диагностика и ремонт легковых автомобилей, грузового транспорта, спецтехники 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd38dc17ab6062c3e27295e52e1cd85c = L.circleMarker(
+                [55.800155, 37.818858],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_fd38dc17ab6062c3e27295e52e1cd85c.bindTooltip(
+                `<div>
+                     <b>Тренер по художественной гимнастике</b><br>Здравствуйте! 
+Меня зовут Ольга Алексеевна, мне 19 лет 
+
+-КМС по художественной гимнастике;
+-Победит
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6d4967c0e76d6949815e7abbbe55bf8 = L.circleMarker(
+                [55.74948502, 37.59149551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_c6d4967c0e76d6949815e7abbbe55bf8.bindTooltip(
+                `<div>
+                     <b>Проверка контрагента. Выписка спарк</b><br>Оперативная пpoвeрка кoнтрaгента (юридичеcкогo лица или ИП) пo ИНН, по ОГPН c пoмoщью cиcтeмы Спарк 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e0d08a63d05c1680195b187b48e8c80 = L.circleMarker(
+                [55.81331699062819, 37.72319213890072],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_7e0d08a63d05c1680195b187b48e8c80.bindTooltip(
+                `<div>
+                     <b>Изготовление гардеробных на заказ. Мебель на заказ</b><br>Изготовим гардеробную на собственном производстве с гарантией по договору
+
+❗❗❗ОПЛАТА ПРИ ПОЛУЧЕНИИ
+
+
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5786d483f9d0176b8df1a8bcf99c5d69 = L.circleMarker(
+                [55.83361053, 37.50876999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_5786d483f9d0176b8df1a8bcf99c5d69.bindTooltip(
+                `<div>
+                     <b>Ремонт бензопил и газонокосилок</b><br>Какие инструменты мы ремонтируем:
+
+· Бензоинструмент: Бензопилы, триммеры, газонокосилки, мотоблоки,
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c95202de84fc6ab2453e90805d8cc86b = L.circleMarker(
+                [55.74261606824342, 37.78517567664082],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_c95202de84fc6ab2453e90805d8cc86b.bindTooltip(
+                `<div>
+                     <b>Установка(монтаж кондиционеров, сплит-систем</b><br>Установка(монтаж) кондиционеров сплит-систем. Без пыли. Опыт более 10 лет. ГАРАНТИЯ НА УСТАНОВКУ 3 Г
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_41e43d8e435bf172183ded785addef42 = L.circleMarker(
+                [55.870819, 37.677607],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_41e43d8e435bf172183ded785addef42.bindTooltip(
+                `<div>
+                     <b>Срочная печать на пакетах от 100 штук</b><br>Печать на пакетах за 4 дня тиражами от 100 до 10000 шт!
+
+🚚 Доставка по Москве и МО - бесплатно!
+
+💪 О
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a9948a094cb905d60584943f9b02108 = L.circleMarker(
+                [55.710874, 37.732413],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_2a9948a094cb905d60584943f9b02108.bindTooltip(
+                `<div>
+                     <b>Химчистка диванов и мебели на дому с выездом</b><br>Химчистка диванов и мягкой мебели на дому.
+
+Профессиональная чистка диванов с выездом — можно в день
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62f56ce670849d61aa46c279751f7fcf = L.circleMarker(
+                [55.77677536, 37.58525848],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_62f56ce670849d61aa46c279751f7fcf.bindTooltip(
+                `<div>
+                     <b>Наращивание ресниц Ламинирование</b><br>Привет, красавица 🌸
+
+Меня зовут Олеся Илясова, я мастер по наращиванию ресниц, и я обожаю делать так
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a681dca6800164582a095b5fc435b2c = L.circleMarker(
+                [55.63385773, 37.41405869],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_4a681dca6800164582a095b5fc435b2c.bindTooltip(
+                `<div>
+                     <b>Татуировки</b><br>Давай раскроем твою индивидуальность и подчеркнем необычность?
+
+Меня зовут Ксения, я тату-мастер с о
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_698c62d7ad371e77c787b598b2caa229 = L.circleMarker(
+                [55.688798, 37.727915],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_698c62d7ad371e77c787b598b2caa229.bindTooltip(
+                `<div>
+                     <b>Утилизация не крупной бытовой техники</b><br>Доброго дня.
+
+Просьба ДОЧИТАЙТЕ ПОЖАЛУЙСТА ДО КОНЦА, ОСОБЕННО ПРО РАЙОНЫ ОБСЛУЖИВАНИЯ. 
+
+Меня зовут 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_987bca6cdb61362da8db2ccb960c7f19 = L.circleMarker(
+                [55.75354385, 37.62120056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_987bca6cdb61362da8db2ccb960c7f19.bindTooltip(
+                `<div>
+                     <b>Расслабляющий массаж, Access Bars/Аксесс Барс</b><br>🌸 Подарите себе час полного расслабления! 
+
+Приглашаю на сеансы массажа, где каждая минута посвящена
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58f2a54663f42d0831db8ea8f2c65ef0 = L.circleMarker(
+                [55.663634, 37.483095],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_58f2a54663f42d0831db8ea8f2c65ef0.bindTooltip(
+                `<div>
+                     <b>Окрашивание Стрижка Стилист Парикмахер на дому</b><br>Принимаю дома, все как в салоне, и за приятную цену . Цены меньше , качество выше . Есть мойка для в
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db53319e7f030bd08b44350e0e04ba9a = L.circleMarker(
+                [55.727861, 37.660099],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_db53319e7f030bd08b44350e0e04ba9a.bindTooltip(
+                `<div>
+                     <b>Удаление вмятин без покраски по технологии PDR</b><br>Удаление вмятин без покраски по технологии PDR 🔥
+Опыт с 2013 года! 
+
+Сохранение заводского качества 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da2d2f0fc1df90796d35c02f65f74cc0 = L.circleMarker(
+                [55.757536, 37.616414],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_da2d2f0fc1df90796d35c02f65f74cc0.bindTooltip(
+                `<div>
+                     <b>Ведущий мероприятий + Dj (Можно заказать отдельно)</b><br>🎉 Ищете зажигательного ведущего на свадьбу, юбилей или корпоратив? Хотите, чтобы ваш праздник запомн
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bdbb38e8076c187a4eeedb805757aedf = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_bdbb38e8076c187a4eeedb805757aedf.bindTooltip(
+                `<div>
+                     <b>Адвокат, защита по уголовным делам на всех стадиях</b><br>Я, Хлудин Роман Александрович — адвокат с более чем 20-летним стажем юридической работы, из которых 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2499e0c596dd49764d1bb0b8bfd4b56b = L.circleMarker(
+                [55.88087463, 37.64699173],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_2499e0c596dd49764d1bb0b8bfd4b56b.bindTooltip(
+                `<div>
+                     <b>Мастер по ремонту обуви, сумок</b><br>Реставрация,химчистка, ремонт обуви, сумок, кошельков, ремней и того, за что не берутся в других мас
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1e03b1eef9c96bb90c0e4b5cc45d76c = L.circleMarker(
+                [55.786998104155494, 37.73597138552098],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_f1e03b1eef9c96bb90c0e4b5cc45d76c.bindTooltip(
+                `<div>
+                     <b>Маникюр наращивание ногтей</b><br>🤗Рада приветствовать!
+Меня зовут Варя)
+Я мастер с опытом работы более двух лет
+💕Опережая вопросы: вс
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca17ee8fe525b89d26a533999424802b = L.circleMarker(
+                [55.75581741, 37.61764526],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_ca17ee8fe525b89d26a533999424802b.bindTooltip(
+                `<div>
+                     <b>Установка бордюров /монтаж бордюров/гранит/бетон</b><br>Монтаж и установка бордюров, поребриков. Бетонный, гранитный, резиновый, металлический. Работа под к
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8abaf436ccfea658bd7892979cf1cbd9 = L.circleMarker(
+                [55.623117, 37.60399],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_8abaf436ccfea658bd7892979cf1cbd9.bindTooltip(
+                `<div>
+                     <b>Юрист по семейным делам, разводам</b><br>Развод — это боль.
+Раздел имущества — это страх потерять всё.
+Спор о ребёнке — это самое тяжёлое, чт
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_28dd8b24e2a5be8dd043b3fb45899927 = L.circleMarker(
+                [55.57767416527587, 37.577186051696806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_28dd8b24e2a5be8dd043b3fb45899927.bindTooltip(
+                `<div>
+                     <b>Изготовление и продажа автомобильных ключей</b><br>Делаем домофонные ключи ПИК любой сложности
+Изготавливаю:
+Дубликаты автомобильных ключей
+Автомобильн
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d326d9f018a1840acf6fe9b6c8c76444 = L.circleMarker(
+                [55.691785, 37.498258],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_d326d9f018a1840acf6fe9b6c8c76444.bindTooltip(
+                `<div>
+                     <b>Печать на сахарной бумаге,вафельная печать, Москва</b><br>Здравствуйте! Печатаю изображения на сахарной и вафельной бумаге пищевыми чернилами. Съедобная печат
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb4ecb8b99e31686d7efb4e1720570e8 = L.circleMarker(
+                [55.652085, 37.59833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_fb4ecb8b99e31686d7efb4e1720570e8.bindTooltip(
+                `<div>
+                     <b>Парикмахер у себя на дому</b><br>Парикмахер с большим опытом различных видов стрижек и окрашиваний.  Стаж с 1995 года.  Постоянно в к
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5104bee60f454a2cf002ad03ef85e33 = L.circleMarker(
+                [55.71283722, 37.56422043],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_f5104bee60f454a2cf002ad03ef85e33.bindTooltip(
+                `<div>
+                     <b>Фитнес-тренер</b><br>ДРУЗЬЯ, ПРИВЕТСТВУЮ! 
+
+Меня зовут Татьяна. Я эксперт по здоровью и ресурсности.
+
+🔺Персональный трене
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_491b6f64f9b63161ddb09d1c492eb42f = L.circleMarker(
+                [55.72957993, 37.47058105],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_491b6f64f9b63161ddb09d1c492eb42f.bindTooltip(
+                `<div>
+                     <b>Психолог, психолог онлайн, дпдг (emdr) более 4лет</b><br>Если вы всё понимаете головой, но внутри всё равно больно, тревожно и вы ничего не можете с этим сде
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae998e2656fb31b6c5305b6822b8016b = L.circleMarker(
+                [55.88747406, 37.66153717],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_ae998e2656fb31b6c5305b6822b8016b.bindTooltip(
+                `<div>
+                     <b>Мастер по ремонту и чистке кулеров для воды</b><br>Здравствуйте. Я частный мастер по ремонту и санобработке кулеров и пурифайеров для воды💦💦
+
+Плоохой в
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_929ad487d27d874e9a62eb1055cd384f = L.circleMarker(
+                [55.86487198, 37.6049881],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_929ad487d27d874e9a62eb1055cd384f.bindTooltip(
+                `<div>
+                     <b>Услуги парикмахера колориста</b><br>Хотите обновить образ за один визит? Приглашаю вас на профессиональные стрижки, окрашивание и архите
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2749763ffed8f4e0421b22b4b893c69 = L.circleMarker(
+                [55.652816, 37.429708],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_d2749763ffed8f4e0421b22b4b893c69.bindTooltip(
+                `<div>
+                     <b>Тестирование fluke и сертификация скс</b><br>Тестирование fluke и сертификация скс. Монтаж скс/волс/лвс. Монтаж слаботочных систем. Прокладка и с
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_613920baa289de66778a731cb2376904 = L.circleMarker(
+                [55.6637273389831, 37.7714244869197],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_613920baa289de66778a731cb2376904.bindTooltip(
+                `<div>
+                     <b>Ремонт автомобильных плат любой сложности</b><br>Ремонт плат, поиск замыканий и утечек, восстановление сгоревших дорожек, восстановление площадок под
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6dd6f732f2542d8ef9eeb81d7b45bc02 = L.circleMarker(
+                [55.60962677001953, 37.60517120361328],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_6dd6f732f2542d8ef9eeb81d7b45bc02.bindTooltip(
+                `<div>
+                     <b>Прошивка телефонов frp всех моделей</b><br>Восстановление работы телефона
+
+✅Помогу устранить программные неполадки на вашем устройстве.
+
+✅Удале
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e59adbf9d9b73271a384deb6796d439 = L.circleMarker(
+                [55.859125, 37.682152],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_6e59adbf9d9b73271a384deb6796d439.bindTooltip(
+                `<div>
+                     <b>Строительное водопонижение</b><br>Выполняем любые работы по cтрoитeльному водопoнижeнию гpунтoвыx вoд иглoфильтpами.
+
+Осушениe строитe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f68340771c4f98ccb9c8a53c8840a0d8 = L.circleMarker(
+                [55.749486, 37.591494],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_f68340771c4f98ccb9c8a53c8840a0d8.bindTooltip(
+                `<div>
+                     <b>Таролог на мероприятие</b><br>Добрый день!
+
+Меня зовут Ева, и я буду рада украсить ваше мероприятие, создав на нем островок магии 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edda0d7833fa2e8d8f2d212116f81ffa = L.circleMarker(
+                [55.607290950452665, 37.53165382579357],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_edda0d7833fa2e8d8f2d212116f81ffa.bindTooltip(
+                `<div>
+                     <b>Поклейка обоев, Шпаклевка под обои</b><br>Поклейка обоев, шпаклёвка под обои
+
+👷‍♂️Работаю по Москве и МО!!!👨‍🔧
+
+Поклейка обоев - цена за м2 по
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9215a06cb5ed6659c97d6248b06657f = L.circleMarker(
+                [55.754416, 37.507403],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_f9215a06cb5ed6659c97d6248b06657f.bindTooltip(
+                `<div>
+                     <b>Ремонт кресел офисных и компьютерных</b><br>🪑 Ремонт кресел с выездом 🪑 Гарантия на работы и запчасти.
+Опыт работы с 2010 года. 
+
+Ремонтируем кр
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73573ba37f0688eab281ecd36caf524d = L.circleMarker(
+                [55.730867, 37.638773],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_73573ba37f0688eab281ecd36caf524d.bindTooltip(
+                `<div>
+                     <b>Маникюр и педикюр</b><br>Прекрасного дня, Вам!☀️
+МОДЕЛИ НЕ НУЖНЫ!!!💫 Если хотите записаться, то только на услуги!!!
+Меня зову
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_579fd73b01c4ab7861ae877e38fa88d1 = L.circleMarker(
+                [55.748470690414585, 37.536880224822966],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_579fd73b01c4ab7861ae877e38fa88d1.bindTooltip(
+                `<div>
+                     <b>Индивидуальное обучение трейдингу</b><br>🔥 Трейдинг — это не лотерея. Это навык, который можно освоить.
+Мечтаешь работать из дома, сам плани
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_089ee4605f0370d98640f188061cbbb0 = L.circleMarker(
+                [55.73151671104284, 37.58747667135428],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_089ee4605f0370d98640f188061cbbb0.bindTooltip(
+                `<div>
+                     <b>Рилсмейкер на свадьбу, видеограф</b><br>Свадебный рилсмейкер🎥
+
+Меня зовут Виктория и я создаю самые красивые воспоминания о вашей свадьбе💍
+
+
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63d026af6979862f4352acee6e1ec2bb = L.circleMarker(
+                [55.74831009, 37.53426361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_63d026af6979862f4352acee6e1ec2bb.bindTooltip(
+                `<div>
+                     <b>Услуги профессионального фотографа</b><br>Автомобильная съемка на продажу/для личного использования/для автосалона (за дополнительными примера
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_064f8ec83bf09543dd830acc2886eeee = L.circleMarker(
+                [55.760444, 37.662353],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_064f8ec83bf09543dd830acc2886eeee.bindTooltip(
+                `<div>
+                     <b>Банкротство. Эксперт по долгам и просрочкам</b><br>Эксперт Александр Фетисов компании по банкротству физических лиц и ИП ⚖️ — помогу законно списать до
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1d505545e9e36636dd7c5cbee7460b3 = L.circleMarker(
+                [55.793915, 37.615479],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_d1d505545e9e36636dd7c5cbee7460b3.bindTooltip(
+                `<div>
+                     <b>Модели на контурную пластику лица. Врачи с опытом</b><br>Требуются модели на контурную пластику лица (углы, скулы, подбородк и тп, кроме губ). Оплата по себе
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a63d0fc8664d2b3f169ac9663895d6a5 = L.circleMarker(
+                [55.75366592, 37.71915436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_a63d0fc8664d2b3f169ac9663895d6a5.bindTooltip(
+                `<div>
+                     <b>Скупка катализаторов</b><br>Приём катализаторов  в Москве и МО.
+
+Принимаем катализаторный лом от любого веса. Больше объем — выш
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3218ae47dbc9e23c630263e28f79715a = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_3218ae47dbc9e23c630263e28f79715a.bindTooltip(
+                `<div>
+                     <b>Генеалогическое древо / Родословная / Исследование</b><br>Предлагаю провести компетентное генеалогическое исследование - поиск предков всех конфессий и национ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11de5933a35946c8d8020803f7e6e16f = L.circleMarker(
+                [55.749451, 37.542824],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_11de5933a35946c8d8020803f7e6e16f.bindTooltip(
+                `<div>
+                     <b>Каркасный дом 7х9 / 126м²</b><br>🏡 Кapкaсный дoм 126 м² за 45-60 дней - бeз прeдoплaты!
+
+Плaниpoвкa (мoжно изменить):
+— Кухня-гостина
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2dfd53e7fda93d807b2dc571414507b4 = L.circleMarker(
+                [55.85108948, 37.64961624],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_2dfd53e7fda93d807b2dc571414507b4.bindTooltip(
+                `<div>
+                     <b>Роскошное наращивание ресниц на любой случай</b><br>Профессиональное наращивание ресниц 🌆 в районах ВДНХ, Останкино, Свиблово, Алексеевский, Ростокино и
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_21ac1713e450a18397e698c0d5ec9119 = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_21ac1713e450a18397e698c0d5ec9119.bindTooltip(
+                `<div>
+                     <b>Бутылки и термокружки с ваши логотипом</b><br>Изготовим стильные и практичные аксессуары для вашего бренда: термокружки, бутылки и термобутылки лю
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef65c3a930cdd9bc8c731ee23c628378 = L.circleMarker(
+                [55.704408, 37.44365],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_ef65c3a930cdd9bc8c731ee23c628378.bindTooltip(
+                `<div>
+                     <b>Аренда тепловой пушки газ дизель электро</b><br>Компания ФабрикаПроката сдает в аренду тепловые пушки
+
+---------------------------------------------
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72efd57ce240d3b6855fe0cd66f39037 = L.circleMarker(
+                [55.723248, 37.564106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_72efd57ce240d3b6855fe0cd66f39037.bindTooltip(
+                `<div>
+                     <b>Репетитор по медицинским предметам</b><br>С микронаушниками не помогаю.
+
+Всем привет! Преподаю биохимию, физиологию, патологическую анатомию, 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d14d2f5ff126918013dcbf8ca79a4be = L.circleMarker(
+                [55.79630038409174, 37.79940260866175],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_3d14d2f5ff126918013dcbf8ca79a4be.bindTooltip(
+                `<div>
+                     <b>Услуги электрика Замена розеток выключателей</b><br>Электрик. Быстрая замена розеток в день вызова
+
+Электромонтажные работы.
+
+Выезд в любой район в тече
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63b07e53012fbc49ffa5213678ac2b9c = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_63b07e53012fbc49ffa5213678ac2b9c.bindTooltip(
+                `<div>
+                     <b>Репетитор qgis картография плагины автоматизация</b><br>Не получается разобраться с QGIS, непонятен механизм действия инструментов и типы данных, а лаборато
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9200fbdfa4227d90b45a81bb1867dfa7 = L.circleMarker(
+                [55.549129, 37.4993],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_9200fbdfa4227d90b45a81bb1867dfa7.bindTooltip(
+                `<div>
+                     <b>Аренда минивэна с водителем на Свадьбу, в отель</b><br>Роскошный минивэн Kia Carnival 3 поколения для вашей свадьбы, торжественных мероприятий, на выставки
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba73f86cec19eebec5776c3b8d5a7244 = L.circleMarker(
+                [55.67409897, 37.55367661],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_ba73f86cec19eebec5776c3b8d5a7244.bindTooltip(
+                `<div>
+                     <b>Маникюр, наращивание ногтей</b><br>Здравствуйте,меня зовут Дина и я сертифицированный мастер по маникюру с опытом 15 лет)Инструменты пр
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fabc2859bffcf6b3fa0c7592455c997 = L.circleMarker(
+                [55.71272, 37.633275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_6fabc2859bffcf6b3fa0c7592455c997.bindTooltip(
+                `<div>
+                     <b>Аренда автодома Челленджер 7 мест, 2021г</b><br>Сдаётся в аренду премиальный альковный автодом Challenger с кондиционером и солнечными батареями
+20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3679fe21a95df2a47c5752dcbca8d3d = L.circleMarker(
+                [55.75922314490209, 37.65352381993166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_c3679fe21a95df2a47c5752dcbca8d3d.bindTooltip(
+                `<div>
+                     <b>Массаж всего тела</b><br>Доброго Вам дня 🌱 Меня зовут Наталья и я приглашаю мужчин и женщин на первый, пробный сеанс в тихом,
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0959a26dbade9c9291663b969815a3dd = L.circleMarker(
+                [55.818321, 37.487685],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_0959a26dbade9c9291663b969815a3dd.bindTooltip(
+                `<div>
+                     <b>Аренда контейнера для мусора</b><br>🚛 Аренда контейнера 8 м³ — чистота территории по графику
+✉️ Оставьте заявку в чате — подберём контей
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c59d97b55fbccef8ab6c879f35adf516 = L.circleMarker(
+                [55.63734818, 37.66384506],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_c59d97b55fbccef8ab6c879f35adf516.bindTooltip(
+                `<div>
+                     <b>Маникюр, педикюр, наращивание ногтей</b><br>ТРЕБУЮТСЯ МОДЕЛИ НА НАРАЩИВАНИЕ НА НИЖНИЕ ФОРМЫ ПО ЦЕНЕ ОТ 1500 ДО 2000 РУБ В ЗАВИСИМОСТИ ОТ ДЛИНЫ! 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6982e594083072be9b0fa24fe78dfe7f = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_6982e594083072be9b0fa24fe78dfe7f.bindTooltip(
+                `<div>
+                     <b>Охрана объектов чоп / Услуги чоп</b><br>Чacтнaя оxраннaя организация ГЕФЕСТ&quot; окaзывaeт услуги пo Mocквe, Московcкой oблаcти и рeгионам по не
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_13fa581cea55fa35eddd8f3708ac252c = L.circleMarker(
+                [55.749451, 37.542824],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_13fa581cea55fa35eddd8f3708ac252c.bindTooltip(
+                `<div>
+                     <b>Крупье, покер, дилер</b><br>Здравствуйте
+
+Рад что Вас заинтересовало мое объявление, звоните или пишите для обсуждения всех вопр
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ebd1b53e5b4c45f1d1754365a1fbf849 = L.circleMarker(
+                [55.75488566293024, 37.633827779820024],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_ebd1b53e5b4c45f1d1754365a1fbf849.bindTooltip(
+                `<div>
+                     <b>Грузоперевозки грузчики разнорабочие</b><br>Приветствую! Мы занимаемся погрузками и разгрузками любой сложности, в нашей команде имеются 10 стаб
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ebd9e88afc282f430008f9f099a0ad1 = L.circleMarker(
+                [55.853599043418555, 37.47195630763167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_3ebd9e88afc282f430008f9f099a0ad1.bindTooltip(
+                `<div>
+                     <b>Эвакуатор Москва 24/7 Подача 15-20 мин</b><br>✅Эвакуатор. Манипулятор. Эвакуатор Москва, Эвакуатор межгород. Быстро. Недорого. ✅ ПРОЧИТАЙТЕ до кон
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7ec8f4cf5a3b2bf45bd6f3e3e9ca241 = L.circleMarker(
+                [55.613438, 37.606254],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_a7ec8f4cf5a3b2bf45bd6f3e3e9ca241.bindTooltip(
+                `<div>
+                     <b>Маникюр с покрытием гель-лак. Держится до 5 недель</b><br>Хoтитe бeзупpeчные нoгти без сколов и тpещин?
+
+Mаникюp в студии красоты Веры Морарь - этo aккуратнос
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_874bc2dfffcfb6a34dce70e1ab3ddb08 = L.circleMarker(
+                [55.755864, 37.617698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_874bc2dfffcfb6a34dce70e1ab3ddb08.bindTooltip(
+                `<div>
+                     <b>Репетитор по математике</b><br>Здравcтвуйтe, меня зoвут Валерия!
+
+Мне 34 года
+
+Из ниx 12 лет я учу дeтей матeматикe в шкoле.
+
+И уже
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99e627b4626d1b2d69a42607921534f2 = L.circleMarker(
+                [55.766884774671354, 37.734656469629414],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_99e627b4626d1b2d69a42607921534f2.bindTooltip(
+                `<div>
+                     <b>Торты, капкейки, трайфлы, бенто-торты на заказ</b><br>Добрый день 🌸
+Меня зовут Светлана, я делаю десерты на любые праздники🥰
+
+Если у Вас намечается радост
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a0c8eaf9a89a4a24b42fe83b04edbf9 = L.circleMarker(
+                [55.533741722482176, 37.51856910107968],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_8a0c8eaf9a89a4a24b42fe83b04edbf9.bindTooltip(
+                `<div>
+                     <b>Локальная покраска авто</b><br>Локальная покраска авто
+
+🔥🔥🔥 Никаких «доплат по ходу дела» и непредсказуемых цен — 🔥🔥только прозрачн
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1f1ec216751ce3b2df9613b8f3ca321 = L.circleMarker(
+                [55.8700932874396, 37.58306329344792],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_b1f1ec216751ce3b2df9613b8f3ca321.bindTooltip(
+                `<div>
+                     <b>Кузовные работы</b><br>Auto Style MCK: профессиональные сварочные и кузовные работы для вашего авто — качество, которому мо
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99be9012ce88257884c2660a745f1742 = L.circleMarker(
+                [55.775699615478516, 37.485076904296875],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_99be9012ce88257884c2660a745f1742.bindTooltip(
+                `<div>
+                     <b>Репетитор по математике</b><br>Репетитор по математике (Алгебра / Геометрия)
+📆ПОДГОТОВКА К ОГЭ 2026
+————————————————————————-
+Меня 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5475150d86f766ee45376c841be8a1b7 = L.circleMarker(
+                [55.69964080269941, 37.92928572750851],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_5475150d86f766ee45376c841be8a1b7.bindTooltip(
+                `<div>
+                     <b>Аренда электровелосипеда для курьеров с 2 АКБ</b><br>2 АКБ / Аренда элэктровелoсипеда Wenbox W-21 PRO и Монстр Truck+ 🚴‍♂️⚡️
+
+Хотите доставлять заказы бы
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_684681774cffa084ebd90df8ab34a9e3 = L.circleMarker(
+                [55.693054, 37.490479],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_3f57c9ce7b1f8327bac4d327ae153185);
+        
+    
+            circle_marker_684681774cffa084ebd90df8ab34a9e3.bindTooltip(
+                `<div>
+                     <b>Монтаж и установка кондиционеров Метро Раменки</b><br>Монтаж и установка кондиционеров метро Раменки
+
+Работаем рядом с метро Раменки, выезд от 15 минут
+
+🌬
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
