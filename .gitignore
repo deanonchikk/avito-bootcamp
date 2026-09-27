@@ -1,6 +1,8 @@
 data/*.parquet
 data/*.zip
 data/*.csv
+data/bm25s_index/
+data/embeddings_*.npy
 !answer.csv
 
 __pycache__/
