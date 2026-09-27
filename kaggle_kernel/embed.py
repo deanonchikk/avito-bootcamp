@@ -67,23 +67,31 @@ DATA_PATH = candidates[0]
 print("используем:", DATA_PATH)
 
 items = pd.read_parquet(DATA_PATH)
-items["text"] = (items["item_title_raw"] + ". " + items["item_description_raw"]).apply(clean_text)
+items["text"] = "passage: " + (
+    items["item_title_raw"] + ". " + items["item_description_raw"]
+).apply(clean_text)
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
-print("device:", device)
+n_gpus = torch.cuda.device_count()
+print("GPUs available:", n_gpus)
 
-model = SentenceTransformer("cointegrated/rubert-tiny2", device=device)
-model.max_seq_length = 1024
+model = SentenceTransformer("intfloat/multilingual-e5-base")
+model.max_seq_length = 512
+
+if n_gpus >= 1:
+    model.half()
 
 embeddings = model.encode(
     items["text"].tolist(),
-    batch_size=128,
+    batch_size=256,
+    device=[f"cuda:{i}" for i in range(n_gpus)] if n_gpus >= 2 else ("cuda" if n_gpus == 1 else "cpu"),
     show_progress_bar=True,
     convert_to_numpy=True,
-    normalize_embeddings=True,
 )
 
-np.save("/kaggle/working/embeddings_rubert_tiny2_1024.npy", embeddings)
-np.save("/kaggle/working/embeddings_rubert_tiny2_1024_item_ids.npy", items["item_id"].to_numpy())
+embeddings = embeddings.astype(np.float32)
+embeddings = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
+
+np.save("/kaggle/working/embeddings_e5_base_512.npy", embeddings)
+np.save("/kaggle/working/embeddings_e5_base_512_item_ids.npy", items["item_id"].to_numpy())
 
 print("done, shape:", embeddings.shape)

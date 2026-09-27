@@ -1,6 +1,6 @@
 {
-  "id": "danilsavelev/avito-embed-rubert-tiny2-seq1024",
-  "title": "avito embed rubert-tiny2 seq1024",
+  "id": "danilsavelev/avito-embed-e5-base-512",
+  "title": "avito embed e5 base 512",
   "code_file": "embed.py",
   "language": "python",
   "kernel_type": "script",
