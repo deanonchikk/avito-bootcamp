@@ -4,12 +4,13 @@ version = "0.1.0"
 description = "Avito DS Bootcamp - кандидатогенерация для категории услуг"
 requires-python = ">=3.12"
 dependencies = [
+    "bm25s>=0.3.11",
     "folium>=0.20.0",
     "ipykernel>=7.3.0",
     "matplotlib>=3.11.2",
     "pandas>=3.0.6",
     "pyarrow>=25.0.1",
-    "rank-bm25>=0.2.2",
+    "pymorphy3>=2.0.6",
     "scikit-learn>=1.9.1",
     "seaborn>=0.13.2",
 ]
