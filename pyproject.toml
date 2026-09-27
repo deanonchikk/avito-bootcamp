@@ -5,6 +5,7 @@ description = "Avito DS Bootcamp - кандидатогенерация для �
 requires-python = ">=3.12"
 dependencies = [
     "bm25s>=0.3.11",
+    "catboost>=1.2.10",
     "faiss-cpu>=1.15.1",
     "folium>=0.20.0",
     "gdown>=6.4.0",

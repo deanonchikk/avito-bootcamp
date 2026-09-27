@@ -1,0 +1,16 @@
+{
+  "id": "danilsavelev/avito-embed-benchmark-items",
+  "title": "avito embed benchmark items",
+  "code_file": "embed.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "machine_shape": "",
+  "dataset_sources": ["danilsavelev/avito-benchmark-items-for-embedding"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

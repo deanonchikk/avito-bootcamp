@@ -2,13 +2,17 @@ data/*.parquet
 data/*.zip
 data/*.csv
 data/bm25s_index/
+data/bm25s_index_bench/
 data/embeddings/
 data/embeddings_*.npy
 data/embeddings_*_shards/
-!answer.csv
 
 kaggle_dataset/*.parquet
+kaggle_dataset_bench/*.parquet
 kaggle_kernel/output/
+kaggle_kernel_bench/output/
+
+notebooks/catboost_info/
 
 __pycache__/
 *.pyc
@@ -20,3 +24,4 @@ venv/
 
 .DS_Store
 notebooks/advanced_eda.ipynb
+notes/

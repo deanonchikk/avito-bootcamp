@@ -144,13 +144,25 @@ model.max_seq_length = 512
 if n_gpus >= 1:
     model.half()
 
-embeddings = model.encode(
-    items["text"].tolist(),
-    batch_size=256,
-    device=[f"cuda:{i}" for i in range(n_gpus)] if n_gpus >= 2 else ("cuda" if n_gpus == 1 else "cpu"),
-    show_progress_bar=True,
-    convert_to_numpy=True,
-)
+device_arg = [f"cuda:{i}" for i in range(n_gpus)] if n_gpus >= 2 else ("cuda" if n_gpus == 1 else "cpu")
+
+texts = items["text"].tolist()
+CHUNK_SIZE = 10000
+n_chunks = (len(texts) + CHUNK_SIZE - 1) // CHUNK_SIZE
+chunks = []
+for i in range(n_chunks):
+    chunk_texts = texts[i * CHUNK_SIZE:(i + 1) * CHUNK_SIZE]
+    chunk_emb = model.encode(
+        chunk_texts,
+        batch_size=256,
+        device=device_arg,
+        show_progress_bar=False,
+        convert_to_numpy=True,
+    )
+    chunks.append(chunk_emb)
+    print(f"chunk {i + 1}/{n_chunks} готов ({(i + 1) * CHUNK_SIZE if i < n_chunks - 1 else len(texts)}/{len(texts)})", flush=True)
+
+embeddings = np.concatenate(chunks)
 
 embeddings = embeddings.astype(np.float32)
 embeddings = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
