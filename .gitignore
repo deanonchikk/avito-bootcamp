@@ -2,8 +2,13 @@ data/*.parquet
 data/*.zip
 data/*.csv
 data/bm25s_index/
+data/embeddings/
 data/embeddings_*.npy
+data/embeddings_*_shards/
 !answer.csv
+
+kaggle_dataset/*.parquet
+kaggle_kernel/output/
 
 __pycache__/
 *.pyc
@@ -14,3 +19,4 @@ venv/
 .idea/
 
 .DS_Store
+notebooks/advanced_eda.ipynb
