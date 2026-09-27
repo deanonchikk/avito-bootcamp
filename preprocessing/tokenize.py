@@ -31,8 +31,9 @@ REVERSE_MAP = str.maketrans({v: k for k, v in {
 }.items()})
 
 TOKEN_RE = re.compile(r"[а-яёa-z0-9]+")
-CYR_RE = re.compile(r"[а-яё]")
-LAT_RE = re.compile(r"[a-z]")
+WORD_RE = re.compile(r"[а-яёА-ЯЁa-zA-Z0-9]+")
+CYR_RE = re.compile(r"[а-яёА-ЯЁ]")
+LAT_RE = re.compile(r"[a-zA-Z]")
 DIGIT_RE = re.compile(r"[0-9]")
 
 # список стоп-слов nltk.corpus.stopwords.words("russian") (151 слово)
@@ -56,8 +57,12 @@ STOP_WORDS = {
     "этого", "этой", "этом", "этот", "эту", "я",
 }
 
+GLUED_MAX_LEN = 18
+CYR_ONLY_RE = re.compile(r"^[а-яё]+$")
+
 _morph = pymorphy3.MorphAnalyzer()
 _lemma_cache: dict[str, str] = {}
+_is_known_cache: dict[str, bool] = {}
 
 
 def _script_purity_score(s: str) -> int:
@@ -74,10 +79,51 @@ def normalize_homoglyphs(token: str) -> str:
     return min((forward, reverse), key=_script_purity_score)
 
 
+def _is_known(word: str) -> bool:
+    if word not in _is_known_cache:
+        _is_known_cache[word] = _morph.parse(word)[0].is_known
+    return _is_known_cache[word]
+
+
+def segment_glued(word: str, max_len: int = GLUED_MAX_LEN, min_piece: int = 3) -> list[str]:
+    if len(word) <= max_len or not CYR_ONLY_RE.match(word) or _is_known(word):
+        return [word]
+
+    result = []
+    i, n = 0, len(word)
+    while i < n:
+        matched = False
+        upper = min(n, i + 25)
+        for j in range(upper, i + min_piece - 1, -1):
+            candidate = word[i:j]
+            if _is_known(candidate):
+                result.append(candidate)
+                i = j
+                matched = True
+                break
+        if not matched:
+            result.append(word[i:i + min_piece])
+            i += min_piece
+    return result
+
+
 def lemmatize(token: str) -> str:
     if token not in _lemma_cache:
         _lemma_cache[token] = _morph.parse(token)[0].normal_form
     return _lemma_cache[token]
+
+
+def clean_text(text) -> str:
+    if not isinstance(text, str):
+        return ""
+
+    def _fix(match: re.Match) -> str:
+        word = match.group(0)
+        if CYR_RE.search(word) and LAT_RE.search(word):
+            return normalize_homoglyphs(word)
+        return word
+
+    return WORD_RE.sub(_fix, text)
 
 
 def tokenize(text) -> list[str]:
@@ -89,5 +135,6 @@ def tokenize(text) -> list[str]:
         normalize_homoglyphs(t) if CYR_RE.search(t) and LAT_RE.search(t) else t
         for t in raw_tokens
     ]
-    kept = [t for t in normalized if len(t) >= 2 and t not in STOP_WORDS]
+    segmented = [piece for t in normalized for piece in segment_glued(t)]
+    kept = [t for t in segmented if len(t) >= 2 and t not in STOP_WORDS]
     return [lemmatize(t) for t in kept]
