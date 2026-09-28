@@ -38,8 +38,11 @@ def make_val_split(
     val_queries["context_id"] = np.arange(len(val_queries))
 
     val_context_str = val_queries[search_cols].astype(str).agg("||".join, axis=1)
+    relevant_by_context = train.loc[context.isin(val_ctx_set)].groupby(
+        context, sort=False
+    )["item_id"].agg(set)
     val_relevant = {
-        context_id: set(train.loc[context == ctx_str, "item_id"])
+        context_id: relevant_by_context.loc[ctx_str]
         for context_id, ctx_str in zip(val_queries["context_id"], val_context_str)
     }
 

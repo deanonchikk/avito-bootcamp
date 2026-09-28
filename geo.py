@@ -12,8 +12,6 @@ def haversine(lat1, lon1, lat2, lon2):
 
 
 def build_loc_centroid(df):
-    """Медианная координата (lat, lon) объявлений на search_location_id/item_location_id -
-    у запроса нет собственных координат, только числовой ID зоны."""
     sp = df.copy()
     sp["item_latitude"] = sp["item_latitude"].astype(float)
     sp["item_longitude"] = sp["item_longitude"].astype(float)
@@ -21,8 +19,6 @@ def build_loc_centroid(df):
 
 
 def build_geo_tree(items_df):
-    """BallTree (haversine) по координатам объявлений для поиска ближайших по реальной
-    дистанции. Возвращает (tree, item_ids) - item_ids[i] соответствует i-й точке дерева."""
     items = items_df.copy()
     items["item_latitude"] = items["item_latitude"].astype(float)
     items["item_longitude"] = items["item_longitude"].astype(float)

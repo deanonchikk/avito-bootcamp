@@ -1,40 +1,14 @@
+from functools import lru_cache
 import re
 
 import pymorphy3
 
-FORWARD_MAP = str.maketrans({
-    "a": "а", "A": "А",
-    "e": "е", "E": "Е",
-    "o": "о", "O": "О",
-    "p": "р", "P": "Р",
-    "c": "с", "C": "С",
-    "x": "х", "X": "Х",
-    "y": "у", "Y": "У",
-    "H": "Н",
-    "K": "К",
-    "M": "М",
-    "T": "Т",
-    "B": "В",
-    "b": "в",
-    "h": "н",
-    "k": "к",
-    "m": "м",
-    "t": "т",
-    "d": "д",
-})
-
-REVERSE_MAP = str.maketrans({v: k for k, v in {
-    "a": "а", "A": "А", "e": "е", "E": "Е", "o": "о", "O": "О",
-    "p": "р", "P": "Р", "c": "с", "C": "С", "x": "х", "X": "Х",
-    "y": "у", "Y": "У", "H": "Н", "K": "К", "M": "М", "T": "Т", "B": "В",
-    "b": "в", "h": "н", "k": "к", "m": "м", "t": "т", "d": "д",
-}.items()})
+from .text import (
+    CYR_RE, DIGIT_RE, FORWARD_MAP, LAT_RE, REVERSE_MAP, WORD_RE,
+    clean_text, normalize_homoglyphs,
+)
 
 TOKEN_RE = re.compile(r"[а-яёa-z0-9]+")
-WORD_RE = re.compile(r"[а-яёА-ЯЁa-zA-Z0-9]+")
-CYR_RE = re.compile(r"[а-яёА-ЯЁ]")
-LAT_RE = re.compile(r"[a-zA-Z]")
-DIGIT_RE = re.compile(r"[0-9]")
 
 # список стоп-слов nltk.corpus.stopwords.words("russian") (151 слово)
 # захардкожен, чтобы не тащить nltk как зависимость
@@ -60,28 +34,18 @@ STOP_WORDS = {
 GLUED_MAX_LEN = 18
 CYR_ONLY_RE = re.compile(r"^[а-яё]+$")
 
-_morph = pymorphy3.MorphAnalyzer()
 _lemma_cache: dict[str, str] = {}
 _is_known_cache: dict[str, bool] = {}
 
 
-def _script_purity_score(s: str) -> int:
-    n_cyr = len(CYR_RE.findall(s))
-    n_lat = len(LAT_RE.findall(s))
-    return min(n_cyr, n_lat)
-
-
-def normalize_homoglyphs(token: str) -> str:
-    if DIGIT_RE.search(token):
-        return token.translate(REVERSE_MAP)
-    forward = token.translate(FORWARD_MAP)
-    reverse = token.translate(REVERSE_MAP)
-    return min((forward, reverse), key=_script_purity_score)
+@lru_cache(maxsize=1)
+def _get_morph() -> pymorphy3.MorphAnalyzer:
+    return pymorphy3.MorphAnalyzer()
 
 
 def _is_known(word: str) -> bool:
     if word not in _is_known_cache:
-        _is_known_cache[word] = _morph.parse(word)[0].is_known
+        _is_known_cache[word] = _get_morph().parse(word)[0].is_known
     return _is_known_cache[word]
 
 
@@ -109,24 +73,11 @@ def segment_glued(word: str, max_len: int = GLUED_MAX_LEN, min_piece: int = 3) -
 
 def lemmatize(token: str) -> str:
     if token not in _lemma_cache:
-        _lemma_cache[token] = _morph.parse(token)[0].normal_form
+        _lemma_cache[token] = _get_morph().parse(token)[0].normal_form
     return _lemma_cache[token]
 
 
-def clean_text(text) -> str:
-    if not isinstance(text, str):
-        return ""
-
-    def _fix(match: re.Match) -> str:
-        word = match.group(0)
-        if CYR_RE.search(word) and LAT_RE.search(word):
-            return normalize_homoglyphs(word)
-        return word
-
-    return WORD_RE.sub(_fix, text)
-
-
-def tokenize(text) -> list[str]:
+def tokenize(text: object) -> list[str]:
     if not isinstance(text, str):
         return []
     raw_tokens = TOKEN_RE.findall(text.lower())
