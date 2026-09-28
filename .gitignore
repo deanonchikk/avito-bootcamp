@@ -15,10 +15,10 @@ data/embeddings/
 data/embeddings_*.npy
 data/embeddings_*_shards/
 
-kaggle_dataset/*.parquet
-kaggle_dataset_bench/*.parquet
-kaggle_kernel/output/
-kaggle_kernel_bench/output/
+kaggle/dataset/*.parquet
+kaggle/dataset_bench/*.parquet
+kaggle/kernel/output/
+kaggle/kernel_bench/output/
 
 notebooks/catboost_info/
 
