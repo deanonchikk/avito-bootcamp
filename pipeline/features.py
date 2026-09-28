@@ -1,12 +1,13 @@
+from collections import defaultdict
+
 import numpy as np
 import pandas as pd
 
 from preprocessing import extract_label_value, normalize_query
 
-
 FEATURES = ["bm25_norm", "geo_distance_km", "geo_bonus", "geo_exact", "vid_match",
     "tip_match", "log_popularity", "fuzzy_score", "char_score", "dense_score",
-    "title_coverage", "item_price", "item_rating", "log_reviews"]
+    "title_coverage", "item_price", "item_rating", "log_reviews", "subcat_match"]
 LEGACY_CHANNELS = ["bm25", "dense", "lookup", "geo", "filter", "geo_exact"]
 LEGACY_FEATURES = ["geo_distance_km", "geo_exact_match", "vid_uslugi_match", "tip_uslugi_match",
     "item_price", "item_rating", "item_rating_reviews_count", "item_is_phone_hidden",
@@ -32,12 +33,26 @@ class FeatureCatalog:
         self.numeric = {name: pd.to_numeric(items[name], errors="coerce").to_numpy(float, copy=True)
             for name in ["item_price", "item_rating", "item_rating_reviews_count", "item_is_phone_hidden", "item_is_message_forbidden"]}
         self.numeric["item_price"][self.numeric["item_price"] == -1] = np.nan
+        self.microcat = items.item_microcat_id.to_numpy()
+        self.id_to_microcat = dict(zip(self.ids, self.microcat))
+
+    def predict_subcategory(self, fuzzy_map):
+        if not fuzzy_map:
+            return None
+        scores = defaultdict(float)
+        for iid, score in fuzzy_map.items():
+            mc = self.id_to_microcat.get(iid)
+            if mc is not None:
+                scores[mc] += score
+        return max(scores, key=scores.get) if scores else None
 
 
 def build_features(catalog, row, full, *, bm, dist, geo_radius, vid, tip,
                    fuzzy_values, char_values, dense_values, text, qvid, qtip,
-                   channel_positions, channel_values, field_scores):
+                   channel_positions, channel_values, field_scores, predicted_microcat=None):
     qwords = set(text.split())
+    subcat_match = (catalog.microcat[full] == predicted_microcat).astype(np.float32) \
+        if predicted_microcat is not None else np.zeros(len(full), np.float32)
     overlap = np.array([len(qwords & catalog.title_words[p]) for p in full])
     coverage = overlap / max(len(qwords), 1)
     frame = pd.DataFrame({"context_id": row.context_id, "item_id": catalog.ids[full],
@@ -57,7 +72,7 @@ def build_features(catalog, row, full, *, bm, dist, geo_radius, vid, tip,
         "item_is_message_forbidden": catalog.numeric["item_is_message_forbidden"][full],
         "item_popularity": catalog.pop[full], "text_overlap": overlap,
         "query_words": len(qwords), "query_known": text in catalog.known_texts,
-        "delivery_search": row.search_is_delivery_search})
+        "delivery_search": row.search_is_delivery_search, "subcat_match": subcat_match})
     for name, positions in channel_positions.items():
         ranks = {int(p): rank for rank, p in enumerate(positions, 1)}
         values = np.array([ranks.get(int(p), 0) for p in full])

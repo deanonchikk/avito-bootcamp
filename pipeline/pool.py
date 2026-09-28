@@ -104,6 +104,7 @@ class PoolEngine:
                         near = self.geo.tree_positions[near_idx[0]]
                         distance = haversine(coords[0], coords[1], self.lat, self.lon)
                 fuzzy_map = self.fuzzy.scores(row.search_query)
+                predicted_microcat = self.feature_catalog.predict_subcategory(fuzzy_map)
                 fuzzy_ids = sorted(fuzzy_map, key=lambda iid: (-fuzzy_map[iid], iid))[:100]
                 fpos = np.array([self.pos[iid] for iid in fuzzy_ids], int)
                 cr = char_sim.getrow(j)
@@ -182,7 +183,8 @@ class PoolEngine:
                     geo_radius=geo_radius, vid=vid, tip=tip, fuzzy_values=fuzzy_values,
                     char_values=char_values, dense_values=dense_values, text=text,
                     qvid=qvid, qtip=qtip, channel_positions=channel_positions,
-                    channel_values=channel_values, field_scores=field_scores)
+                    channel_values=channel_values, field_scores=field_scores,
+                    predicted_microcat=predicted_microcat)
                 yield QueryCandidates(int(row.context_id), pools, frame, local50, text not in self.known_texts)
             if (begin + len(batch)) % 500 == 0:
                 print(f"каналы: {begin + len(batch)}/{len(queries)}", flush=True)

@@ -48,7 +48,7 @@ class SubmissionWriter:
     final_policy: str
     training_info: dict
 
-    def make_submission(self, path="submissions/v2.csv"):
+    def make_submission(self, path="submissions/v3.csv"):
         assets = self.benchmark_engine
         engine = PoolEngine(self.root, assets.items, self.train, assets.base, assets.weighted,
             char_matrix=assets.char_matrix, fields=assets.fields, dense=assets.dense)
