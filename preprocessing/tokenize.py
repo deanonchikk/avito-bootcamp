@@ -1,12 +1,24 @@
-from functools import lru_cache
 import re
+from functools import lru_cache
 
 import pymorphy3
 
 from .text import (
-    CYR_RE, DIGIT_RE, FORWARD_MAP, LAT_RE, REVERSE_MAP, WORD_RE,
-    clean_text, normalize_homoglyphs,
+    CYR_RE,
+    DIGIT_RE,
+    FORWARD_MAP,
+    LAT_RE,
+    REVERSE_MAP,
+    WORD_RE,
+    clean_text,
+    normalize_homoglyphs,
 )
+
+# re-экспорт для preprocessing/__init__.py — не используются напрямую в этом файле
+__all__ = [
+    "DIGIT_RE", "FORWARD_MAP", "REVERSE_MAP", "STOP_WORDS", "WORD_RE",
+    "clean_text", "lemmatize", "normalize_homoglyphs", "segment_glued", "tokenize",
+]
 
 TOKEN_RE = re.compile(r"[а-яёa-z0-9]+")
 

@@ -1,12 +1,13 @@
-from dataclasses import dataclass
 import json
+from dataclasses import dataclass
 
 import numpy as np
 import pandas as pd
 from threadpoolctl import threadpool_limits
 
-from .artifacts import pipeline_signature
 from eval.split import make_val_split
+
+from .artifacts import pipeline_signature
 from .features import FEATURES, LEGACY_FEATURES
 from .pool import PoolEngine
 

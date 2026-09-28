@@ -1,15 +1,19 @@
+import heapq
 from collections import Counter, defaultdict
 from functools import lru_cache
-import heapq
 from pathlib import Path
 
 import numpy as np
-from scipy import sparse
 from threadpoolctl import threadpool_limits
 
-from .artifacts import load_item_embeddings, load_query_embeddings, save_query_embeddings
-from .geo import build_geo_tree
 from preprocessing import build_e5_query_text, normalize_query
+
+from .artifacts import (
+    load_item_embeddings,
+    load_query_embeddings,
+    save_query_embeddings,
+)
+from .geo import build_geo_tree
 
 
 def stable_topk(scores, item_ids, k=50, eligible=None, positive_only=True):

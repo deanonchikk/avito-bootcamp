@@ -2,7 +2,6 @@ from .params import extract_semantic_params
 from .text import as_text, clean_text
 from .tokenize import tokenize
 
-
 CHAR_MAX_DESC = 200
 CHAR_MAX_PARAMS = 100
 

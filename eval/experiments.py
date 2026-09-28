@@ -6,11 +6,12 @@ import pandas as pd
 from threadpoolctl import threadpool_limits
 
 from pipeline.artifacts import benchmark_assets
-from .metrics import recall_at_50, recall_at_k
 from pipeline.pool import PoolEngine
 from pipeline.ranker import predict_scores, rank_items
 from pipeline.retrieval import reciprocal_rank_fusion
 from pipeline.submission import apply_policy
+
+from .metrics import recall_at_50, recall_at_k
 
 
 def metric_table(predictions, relevant):

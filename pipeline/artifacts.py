@@ -1,7 +1,7 @@
 import hashlib
 import json
-from pathlib import Path
 import pickle
+from pathlib import Path
 
 import bm25s
 import numpy as np

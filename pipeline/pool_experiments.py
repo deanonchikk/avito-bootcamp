@@ -1,19 +1,21 @@
-from collections import defaultdict
 import json
-from pathlib import Path
 import pickle
+from collections import defaultdict
+from pathlib import Path
 
 import pandas as pd
 from threadpoolctl import threadpool_limits
 
-from .artifacts import benchmark_assets, load_bm25, pipeline_signature
 from eval import make_val_split
 from eval.experiments import BenchmarkProxy, RankingEvaluation, metric_table
-from .features import CHANNELS, FEATURES, LEGACY_CHANNELS, LEGACY_FEATURES
-from .pool import PoolEngine, QueryCandidates
+
+from .artifacts import load_bm25, pipeline_signature
+from .features import FEATURES  # re-экспорт для solution.ipynb
+from .pool import PoolEngine
 from .ranker import RankerTrainer
-from .retrieval import DenseChannel
 from .submission import SubmissionWriter
+
+__all__ = ["FEATURES", "PoolExperiment"]
 
 
 class PoolExperiment:

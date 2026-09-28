@@ -5,12 +5,19 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from .artifacts import load_char_artifacts, load_field_indexes
 from eval.split import DEFAULT_SEARCH_COLS
-from .features import FeatureCatalog, LEGACY_CHANNELS, build_features
-from .geo import build_loc_centroid, haversine
 from preprocessing import extract_label_value, normalize_query, tokenize
-from .retrieval import DenseChannel, FuzzyLookup, GeographicBM25, reciprocal_rank_fusion, stable_topk
+
+from .artifacts import load_char_artifacts, load_field_indexes
+from .features import LEGACY_CHANNELS, FeatureCatalog, build_features
+from .geo import build_loc_centroid, haversine
+from .retrieval import (
+    DenseChannel,
+    FuzzyLookup,
+    GeographicBM25,
+    reciprocal_rank_fusion,
+    stable_topk,
+)
 
 
 @dataclass
