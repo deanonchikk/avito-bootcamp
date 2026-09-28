@@ -3,6 +3,14 @@ data/*.zip
 data/*.csv
 data/bm25s_index/
 data/bm25s_index_bench/
+data/bm25s_index_weighted/
+data/bm25s_index_title/
+data/bm25s_index_desc/
+data/bm25s_index_params/
+data/tfidf_char_index/
+data/updated_benchmark_index/
+data/query_embeddings_cache/
+data/pool_eval/
 data/embeddings/
 data/embeddings_*.npy
 data/embeddings_*_shards/
@@ -25,3 +33,4 @@ venv/
 .DS_Store
 notebooks/advanced_eda.ipynb
 notes/
+tests/
