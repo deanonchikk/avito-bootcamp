@@ -7,8 +7,8 @@ import numpy as np
 from scipy import sparse
 from threadpoolctl import threadpool_limits
 
-from artifacts import load_item_embeddings, load_query_embeddings, save_query_embeddings
-from geo import build_geo_tree
+from .artifacts import load_item_embeddings, load_query_embeddings, save_query_embeddings
+from .geo import build_geo_tree
 from preprocessing import build_e5_query_text, normalize_query
 
 

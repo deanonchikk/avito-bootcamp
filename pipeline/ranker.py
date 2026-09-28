@@ -5,10 +5,10 @@ import numpy as np
 import pandas as pd
 from threadpoolctl import threadpool_limits
 
-from artifacts import pipeline_signature
+from .artifacts import pipeline_signature
 from eval.split import make_val_split
-from features import FEATURES, LEGACY_FEATURES
-from pool import PoolEngine
+from .features import FEATURES, LEGACY_FEATURES
+from .pool import PoolEngine
 
 
 def predict_scores(model, frame, *, legacy=False):

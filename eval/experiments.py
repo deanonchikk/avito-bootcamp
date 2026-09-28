@@ -5,12 +5,12 @@ import numpy as np
 import pandas as pd
 from threadpoolctl import threadpool_limits
 
-from artifacts import benchmark_assets
+from pipeline.artifacts import benchmark_assets
 from .metrics import recall_at_50, recall_at_k
-from pool import PoolEngine
-from ranker import predict_scores, rank_items
-from retrieval import reciprocal_rank_fusion
-from submission import apply_policy
+from pipeline.pool import PoolEngine
+from pipeline.ranker import predict_scores, rank_items
+from pipeline.retrieval import reciprocal_rank_fusion
+from pipeline.submission import apply_policy
 
 
 def metric_table(predictions, relevant):

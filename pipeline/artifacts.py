@@ -60,9 +60,8 @@ def save_query_embeddings(root, texts, encoded):
 
 
 def pipeline_signature(extra=b""):
-    root = Path(__file__).resolve().parent
-    paths = [root / name for name in ["pool_experiments.py", "retrieval.py", "geo.py",
-             "features.py", "pool.py", "ranker.py", "artifacts.py", "submission.py"]]
+    root = Path(__file__).resolve().parents[1]
+    paths = sorted((root / "pipeline").glob("*.py"))
     paths += sorted((root / "preprocessing").glob("*.py"))
     paths += sorted((root / "eval").glob("*.py"))
     digest = hashlib.sha256()

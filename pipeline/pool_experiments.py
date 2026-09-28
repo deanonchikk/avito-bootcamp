@@ -6,18 +6,18 @@ import pickle
 import pandas as pd
 from threadpoolctl import threadpool_limits
 
-from artifacts import benchmark_assets, load_bm25, pipeline_signature
+from .artifacts import benchmark_assets, load_bm25, pipeline_signature
 from eval import make_val_split
 from eval.experiments import BenchmarkProxy, RankingEvaluation, metric_table
-from features import CHANNELS, FEATURES, LEGACY_CHANNELS, LEGACY_FEATURES
-from pool import PoolEngine, QueryCandidates
-from ranker import RankerTrainer
-from retrieval import DenseChannel
-from submission import SubmissionWriter
+from .features import CHANNELS, FEATURES, LEGACY_CHANNELS, LEGACY_FEATURES
+from .pool import PoolEngine, QueryCandidates
+from .ranker import RankerTrainer
+from .retrieval import DenseChannel
+from .submission import SubmissionWriter
 
 
 class PoolExperiment:
-    def __init__(self, root="..", sample_size=5000):
+    def __init__(self, root=".", sample_size=5000):
         self.root = Path(root).resolve()
         self.train = pd.read_parquet(self.root / "data/train.parquet")
         self.history, self.val_queries, self.val_relevant = make_val_split(self.train, random_state=42)

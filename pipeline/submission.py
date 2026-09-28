@@ -6,10 +6,10 @@ import numpy as np
 import pandas as pd
 from threadpoolctl import threadpool_limits
 
-from features import FEATURES
-from pool import PoolEngine
-from ranker import rank_items
-from retrieval import reciprocal_rank_fusion
+from .features import FEATURES
+from .pool import PoolEngine
+from .ranker import rank_items
+from .retrieval import reciprocal_rank_fusion
 
 
 def apply_policy(ranked, heuristic, geo50, policy, *, top_n=50):
